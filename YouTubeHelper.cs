@@ -1,3 +1,5 @@
+namespace SunamoYouTube;
+
 /// <summary>
 /// YouTube Data API v3 sample: create a playlist.
 /// Relies on the Google APIs Client Library for .NET, v1.7.0 or higher.

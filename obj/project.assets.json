@@ -11,10 +11,10 @@
           "lib/netstandard2.1/Diacritics.dll": {}
         }
       },
-      "Google.Apis/1.60.0": {
+      "Google.Apis/1.64.0": {
         "type": "package",
         "dependencies": {
-          "Google.Apis.Core": "1.60.0"
+          "Google.Apis.Core": "1.64.0"
         },
         "compile": {
           "lib/netstandard2.0/Google.Apis.dll": {
@@ -27,11 +27,12 @@
           }
         }
       },
-      "Google.Apis.Auth/1.60.0": {
+      "Google.Apis.Auth/1.64.0": {
         "type": "package",
         "dependencies": {
-          "Google.Apis": "1.60.0",
-          "Google.Apis.Core": "1.60.0"
+          "Google.Apis": "1.64.0",
+          "Google.Apis.Core": "1.64.0",
+          "System.Management": "7.0.2"
         },
         "compile": {
           "lib/netstandard2.0/Google.Apis.Auth.PlatformServices.dll": {},
@@ -46,10 +47,10 @@
           }
         }
       },
-      "Google.Apis.Core/1.60.0": {
+      "Google.Apis.Core/1.64.0": {
         "type": "package",
         "dependencies": {
-          "Newtonsoft.Json": "13.0.2"
+          "Newtonsoft.Json": "13.0.3"
         },
         "compile": {
           "lib/netstandard2.0/Google.Apis.Core.dll": {
@@ -62,11 +63,11 @@
           }
         }
       },
-      "Google.Apis.YouTube.v3/1.60.0.2945": {
+      "Google.Apis.YouTube.v3/1.64.0.3205": {
         "type": "package",
         "dependencies": {
-          "Google.Apis": "1.60.0",
-          "Google.Apis.Auth": "1.60.0"
+          "Google.Apis": "1.64.0",
+          "Google.Apis.Auth": "1.64.0"
         },
         "compile": {
           "lib/netstandard2.0/Google.Apis.YouTube.v3.dll": {
@@ -79,7 +80,7 @@
           }
         }
       },
-      "HtmlAgilityPack/1.11.54": {
+      "HtmlAgilityPack/1.11.55": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/HtmlAgilityPack.dll": {
@@ -154,35 +155,8 @@
           "lib/netstandard2.1/System.Resources.NetStandard.dll": {}
         }
       },
-      "SunamoBitLockerManager/1.0.3": {
+      "SunamoExceptions/23.12.9.1": {
         "type": "package",
-        "compile": {
-          "lib/net7.0/SunamoBitLockerManager.dll": {}
-        },
-        "runtime": {
-          "lib/net7.0/SunamoBitLockerManager.dll": {}
-        }
-      },
-      "SunamoCl/23.11.19.2": {
-        "type": "package",
-        "dependencies": {
-          "SunamoExceptions": "23.11.19.2",
-          "SunamoShared": "23.11.19.2"
-        },
-        "compile": {
-          "lib/net8.0/SunamoCl.dll": {}
-        },
-        "runtime": {
-          "lib/net8.0/SunamoCl.dll": {}
-        }
-      },
-      "SunamoExceptions/23.11.19.2": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.CSharp": "4.7.0",
-          "SunamoLaTeX": "1.0.9",
-          "System.Memory": "4.5.5"
-        },
         "compile": {
           "lib/net8.0/SunamoExceptions.dll": {}
         },
@@ -190,26 +164,22 @@
           "lib/net8.0/SunamoExceptions.dll": {}
         }
       },
-      "SunamoFubuCore/23.11.19.2": {
+      "SunamoExtensions/23.12.9.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.CSharp": "4.7.0",
-          "SunamoCl": "23.11.7.1",
-          "SunamoExceptions": "23.11.19.2",
-          "System.Configuration.ConfigurationManager": "7.0.0",
-          "System.Memory": "4.5.5"
+          "SunamoExceptions": "23.12.7.2"
         },
         "compile": {
-          "lib/net8.0/SunamoFubuCore.dll": {}
+          "lib/net8.0/SunamoExtensions.dll": {}
         },
         "runtime": {
-          "lib/net8.0/SunamoFubuCore.dll": {}
+          "lib/net8.0/SunamoExtensions.dll": {}
         }
       },
-      "SunamoLang/23.11.19.2": {
+      "SunamoLang/23.12.9.1": {
         "type": "package",
         "dependencies": {
-          "SunamoExceptions": "23.11.19.2"
+          "SunamoExceptions": "23.12.7.2"
         },
         "compile": {
           "lib/net8.0/SunamoLang.dll": {}
@@ -218,26 +188,74 @@
           "lib/net8.0/SunamoLang.dll": {}
         }
       },
-      "SunamoLaTeX/1.0.9": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/SunamoLaTeX.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/SunamoLaTeX.dll": {}
-        }
-      },
-      "SunamoShared/23.11.26.1": {
+      "SunamoObjectDumperNet/23.12.9.1": {
         "type": "package",
         "dependencies": {
+          "ObjectDumper.NET": "4.1.3"
+        },
+        "compile": {
+          "lib/net8.0/SunamoObjectDumperNet.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/SunamoObjectDumperNet.dll": {}
+        }
+      },
+      "SunamoShared/23.12.17.2": {
+        "type": "package",
+        "dependencies": {
+          "Diacritics": "3.3.18",
+          "HtmlAgilityPack": "1.11.55",
           "Newtonsoft.Json": "13.0.3",
-          "SunamoExceptions": "23.11.19.2"
+          "ObjectDumper.NET": "4.1.3",
+          "SunamoExceptions": "23.12.9.1",
+          "SunamoExtensions": "23.12.9.1",
+          "SunamoLang": "23.12.9.1",
+          "SunamoObjectDumperNet": "23.12.9.1",
+          "SunamoXlf": "23.12.9.1",
+          "System.Configuration.ConfigurationManager": "8.0.0",
+          "System.Diagnostics.EventLog": "8.0.0",
+          "System.Drawing.Common": "8.0.0",
+          "System.Management": "8.0.0",
+          "System.Security.Cryptography.ProtectedData": "8.0.0",
+          "System.Security.Permissions": "8.0.0",
+          "YamlDotNet": "13.7.1"
         },
         "compile": {
           "lib/net8.0/SunamoShared.dll": {}
         },
         "runtime": {
           "lib/net8.0/SunamoShared.dll": {}
+        },
+        "resource": {
+          "lib/net8.0/cs-CZ/SunamoShared.resources.dll": {
+            "locale": "cs-CZ"
+          },
+          "lib/net8.0/en-US/SunamoShared.resources.dll": {
+            "locale": "en-US"
+          }
+        }
+      },
+      "SunamoXlf/23.12.9.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.7.0",
+          "SunamoXliffParser": "1.0.0",
+          "System.Data.DataSetExtensions": "4.5.0",
+          "System.Memory": "4.5.5",
+          "System.Security.Principal.Windows": "5.0.0"
+        },
+        "compile": {
+          "lib/net8.0/SunamoXlf.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/SunamoXlf.dll": {}
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
         }
       },
       "SunamoXliffParser/1.0.0": {
@@ -270,20 +288,19 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "System.Configuration.ConfigurationManager/7.0.0": {
+      "System.Configuration.ConfigurationManager/8.0.0": {
         "type": "package",
         "dependencies": {
-          "System.Diagnostics.EventLog": "7.0.0",
-          "System.Security.Cryptography.ProtectedData": "7.0.0",
-          "System.Security.Permissions": "7.0.0"
+          "System.Diagnostics.EventLog": "8.0.0",
+          "System.Security.Cryptography.ProtectedData": "8.0.0"
         },
         "compile": {
-          "lib/net7.0/System.Configuration.ConfigurationManager.dll": {
+          "lib/net8.0/System.Configuration.ConfigurationManager.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net7.0/System.Configuration.ConfigurationManager.dll": {
+          "lib/net8.0/System.Configuration.ConfigurationManager.dll": {
             "related": ".xml"
           }
         },
@@ -300,15 +317,15 @@
           "lib/netstandard2.0/System.Data.DataSetExtensions.dll": {}
         }
       },
-      "System.Diagnostics.EventLog/7.0.0": {
+      "System.Diagnostics.EventLog/8.0.0": {
         "type": "package",
         "compile": {
-          "lib/net7.0/System.Diagnostics.EventLog.dll": {
+          "lib/net8.0/System.Diagnostics.EventLog.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net7.0/System.Diagnostics.EventLog.dll": {
+          "lib/net8.0/System.Diagnostics.EventLog.dll": {
             "related": ".xml"
           }
         },
@@ -316,11 +333,11 @@
           "buildTransitive/net6.0/_._": {}
         },
         "runtimeTargets": {
-          "runtimes/win/lib/net7.0/System.Diagnostics.EventLog.Messages.dll": {
+          "runtimes/win/lib/net8.0/System.Diagnostics.EventLog.Messages.dll": {
             "assetType": "runtime",
             "rid": "win"
           },
-          "runtimes/win/lib/net7.0/System.Diagnostics.EventLog.dll": {
+          "runtimes/win/lib/net8.0/System.Diagnostics.EventLog.dll": {
             "assetType": "runtime",
             "rid": "win"
           }
@@ -395,18 +412,18 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "System.Security.Permissions/7.0.0": {
+      "System.Security.Permissions/8.0.0": {
         "type": "package",
         "dependencies": {
-          "System.Windows.Extensions": "7.0.0"
+          "System.Windows.Extensions": "8.0.0"
         },
         "compile": {
-          "lib/net7.0/System.Security.Permissions.dll": {
+          "lib/net8.0/System.Security.Permissions.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net7.0/System.Security.Permissions.dll": {
+          "lib/net8.0/System.Security.Permissions.dll": {
             "related": ".xml"
           }
         },
@@ -437,23 +454,20 @@
           }
         }
       },
-      "System.Windows.Extensions/7.0.0": {
+      "System.Windows.Extensions/8.0.0": {
         "type": "package",
-        "dependencies": {
-          "System.Drawing.Common": "7.0.0"
-        },
         "compile": {
-          "lib/net7.0/System.Windows.Extensions.dll": {
+          "lib/net8.0/System.Windows.Extensions.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net7.0/System.Windows.Extensions.dll": {
+          "lib/net8.0/System.Windows.Extensions.dll": {
             "related": ".xml"
           }
         },
         "runtimeTargets": {
-          "runtimes/win/lib/net7.0/System.Windows.Extensions.dll": {
+          "runtimes/win/lib/net8.0/System.Windows.Extensions.dll": {
             "assetType": "runtime",
             "rid": "win"
           }
@@ -470,79 +484,6 @@
           "lib/net7.0/YamlDotNet.dll": {
             "related": ".xml"
           }
-        }
-      },
-      "sunamo/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
-        "dependencies": {
-          "Diacritics": "3.3.18",
-          "HtmlAgilityPack": "1.11.54",
-          "ObjectDumper.NET": "4.1.3",
-          "SunamoBitLockerManager": "1.0.3",
-          "SunamoCl": "23.11.19.2",
-          "SunamoExceptions": "0.0.0",
-          "SunamoExtensions": "1.0.0",
-          "SunamoFubuCore": "23.11.19.2",
-          "SunamoLang": "23.11.19.2",
-          "SunamoObjectDumperNet": "1.0.0",
-          "SunamoShared": "0.0.0",
-          "SunamoXlf": "1.0.0",
-          "System.Drawing.Common": "8.0.0",
-          "System.Management": "8.0.0",
-          "System.Security.Cryptography.ProtectedData": "8.0.0",
-          "YamlDotNet": "13.7.1"
-        },
-        "compile": {
-          "bin/placeholder/sunamo.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/sunamo.dll": {}
-        }
-      },
-      "SunamoExtensions/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
-        "dependencies": {
-          "SunamoExceptions": "23.11.19.2",
-          "SunamoShared": "23.11.26.1"
-        },
-        "compile": {
-          "bin/placeholder/SunamoExtensions.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/SunamoExtensions.dll": {}
-        }
-      },
-      "SunamoObjectDumperNet/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
-        "dependencies": {
-          "ObjectDumper.NET": "4.1.3"
-        },
-        "compile": {
-          "bin/placeholder/SunamoObjectDumperNet.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/SunamoObjectDumperNet.dll": {}
-        }
-      },
-      "SunamoXlf/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
-        "dependencies": {
-          "Microsoft.CSharp": "4.7.0",
-          "SunamoShared": "23.11.26.1",
-          "SunamoXliffParser": "1.0.0",
-          "System.Data.DataSetExtensions": "4.5.0",
-          "System.Memory": "4.5.5",
-          "System.Security.Principal.Windows": "5.0.0"
-        },
-        "compile": {
-          "bin/placeholder/SunamoXlf.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/SunamoXlf.dll": {}
         }
       }
     }
@@ -564,16 +505,16 @@
         "lib/netstandard2.1/Diacritics.dll"
       ]
     },
-    "Google.Apis/1.60.0": {
-      "sha512": "T8ojAsKlsMkt5nZhTQuocqHYzm/knVm8o2/JMm4louEjaKzT4x0FihoCIxCYSTRGWkYC27LPWspyG4p76+bMzA==",
+    "Google.Apis/1.64.0": {
+      "sha512": "0ki3AJDiTuV5Cb7NUyq+0DDGDLWcPCKbZC1HgyvAW+o/I0rY/HXMvv6IAF65hhfbQB/Scfm8nuAW3weNEXYkxw==",
       "type": "package",
-      "path": "google.apis/1.60.0",
+      "path": "google.apis/1.64.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "NuGetIcon.png",
-        "google.apis.1.60.0.nupkg.sha512",
+        "google.apis.1.64.0.nupkg.sha512",
         "google.apis.nuspec",
         "lib/net45/Google.Apis.PlatformServices.dll",
         "lib/net45/Google.Apis.dll",
@@ -587,16 +528,16 @@
         "lib/netstandard2.0/Google.Apis.xml"
       ]
     },
-    "Google.Apis.Auth/1.60.0": {
-      "sha512": "AUuWniIf2muns/9hesiF7yCKeQN+PbdTU864Rb2wDzW4xmepO6tEnoqREPeow95qIAgkOlL/byKeU65d3ox5Ng==",
+    "Google.Apis.Auth/1.64.0": {
+      "sha512": "u3cwX0E3IpAkROzRPgZtohFSS2DUblkSmwMfh3/2Qwbi/QXHd8ebq2JuCNqmfpJyfgW5AG0+fO0UrrLsYtglMQ==",
       "type": "package",
-      "path": "google.apis.auth/1.60.0",
+      "path": "google.apis.auth/1.64.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "NuGetIcon.png",
-        "google.apis.auth.1.60.0.nupkg.sha512",
+        "google.apis.auth.1.64.0.nupkg.sha512",
         "google.apis.auth.nuspec",
         "lib/net45/Google.Apis.Auth.PlatformServices.dll",
         "lib/net45/Google.Apis.Auth.dll",
@@ -616,16 +557,16 @@
         "lib/netstandard2.0/Google.Apis.Auth.xml"
       ]
     },
-    "Google.Apis.Core/1.60.0": {
-      "sha512": "NOkjqMQblYEZXt2OEgshWayveYW11Pi+Uz0I30Kzl9BvL4TZLJzMqtiu1EdV8XkyyjGuAUgANdi4BOqRDlbVEw==",
+    "Google.Apis.Core/1.64.0": {
+      "sha512": "bqrUhDeMFeMdjtv4QT4Z99WDPSEbS6EKnp1bYvqyc/VpEu4oFNMqw8/bk/7SS7Ko+bodDgum8fkvDwCMZtdWDg==",
       "type": "package",
-      "path": "google.apis.core/1.60.0",
+      "path": "google.apis.core/1.64.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "NuGetIcon.png",
-        "google.apis.core.1.60.0.nupkg.sha512",
+        "google.apis.core.1.64.0.nupkg.sha512",
         "google.apis.core.nuspec",
         "lib/net45/Google.Apis.Core.dll",
         "lib/net45/Google.Apis.Core.pdb",
@@ -638,16 +579,16 @@
         "lib/netstandard2.0/Google.Apis.Core.xml"
       ]
     },
-    "Google.Apis.YouTube.v3/1.60.0.2945": {
-      "sha512": "X28UjAhm4KUNaPEPRk8nVIEJnvqPfa78yhqLhpRa2Bq3rEshBr+/mBGFaQG/UO3ksuELXvJsDigdrQ01uf3ULg==",
+    "Google.Apis.YouTube.v3/1.64.0.3205": {
+      "sha512": "5xJKKc2Is/cwI1JeX3ju4uPumPkEu95fjyEJHpTEsg8OVJhrHRxoj+7oMku1cvHFfMno6Wn0W+oJ20wANDZPaw==",
       "type": "package",
-      "path": "google.apis.youtube.v3/1.60.0.2945",
+      "path": "google.apis.youtube.v3/1.64.0.3205",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "NuGetIcon.png",
-        "google.apis.youtube.v3.1.60.0.2945.nupkg.sha512",
+        "google.apis.youtube.v3.1.64.0.3205.nupkg.sha512",
         "google.apis.youtube.v3.nuspec",
         "lib/net45/Google.Apis.YouTube.v3.dll",
         "lib/net45/Google.Apis.YouTube.v3.pdb",
@@ -660,14 +601,14 @@
         "lib/netstandard2.0/Google.Apis.YouTube.v3.xml"
       ]
     },
-    "HtmlAgilityPack/1.11.54": {
-      "sha512": "bgB79N4urc4D7hrD4R+Qk6CjPiYOfs6vfXNsmw3nCcfQEQvBQGjfAcl5k/tB1ZP1hA0d7xXs0jK8xAXV36IVUg==",
+    "HtmlAgilityPack/1.11.55": {
+      "sha512": "aIAIUltlMf3S5gldT88UHV70DFkNf86YjjoFNNCXAfSwlHtYu3Oj+FB0xqUB8UlrDSVhYjJFY0VqL1IrcHGiZg==",
       "type": "package",
-      "path": "htmlagilitypack/1.11.54",
+      "path": "htmlagilitypack/1.11.55",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "htmlagilitypack.1.11.54.nupkg.sha512",
+        "htmlagilitypack.1.11.55.nupkg.sha512",
         "htmlagilitypack.nuspec",
         "lib/Net35/HtmlAgilityPack.dll",
         "lib/Net35/HtmlAgilityPack.pdb",
@@ -873,95 +814,80 @@
         "resxresourcereader.netstandard.nuspec"
       ]
     },
-    "SunamoBitLockerManager/1.0.3": {
-      "sha512": "MW1z3S6lxIaczYaHl/zcZPXvKezOCI4kIjbArPZYQKVTbPpruEtPWIzj9bcKrZISCZ0dLWeZmmkFxED2+KnKRg==",
+    "SunamoExceptions/23.12.9.1": {
+      "sha512": "gJ6y/wf8mCXdgrPT1vIRls6yZHd1q7vCY6FMcSmkNOcWS7tkgO8DzA4Bn80hT3XJiNeOs5msWKU/Fs1BI3aHgw==",
       "type": "package",
-      "path": "sunamobitlockermanager/1.0.3",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "_.md",
-        "_.png",
-        "lib/net7.0/SunamoBitLockerManager.dll",
-        "sunamobitlockermanager.1.0.3.nupkg.sha512",
-        "sunamobitlockermanager.nuspec"
-      ]
-    },
-    "SunamoCl/23.11.19.2": {
-      "sha512": "ag+JkZZh8aYrS4wjgx/zc9ZkTEERmrWxTZQ8T92mInouVGgstxpgPqmyKcDXyNIZyqbuIGYCKXejMzkgwgVfEQ==",
-      "type": "package",
-      "path": "sunamocl/23.11.19.2",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "_.md",
-        "_.png",
-        "lib/net8.0-windows7.0/SunamoCl.dll",
-        "lib/net8.0/SunamoCl.dll",
-        "sunamocl.23.11.19.2.nupkg.sha512",
-        "sunamocl.nuspec"
-      ]
-    },
-    "SunamoExceptions/23.11.19.2": {
-      "sha512": "lJIlFquo24CcLv6gfik0YLVSE617s6kYaowBFG1QgUy3mBjb+g+n1gPMFEoETAChtWjXvQgyy6Ov32MtH5n43A==",
-      "type": "package",
-      "path": "sunamoexceptions/23.11.19.2",
+      "path": "sunamoexceptions/23.12.9.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/net8.0/SunamoExceptions.dll",
-        "sunamoexceptions.23.11.19.2.nupkg.sha512",
+        "sunamoexceptions.23.12.9.1.nupkg.sha512",
         "sunamoexceptions.nuspec"
       ]
     },
-    "SunamoFubuCore/23.11.19.2": {
-      "sha512": "yVX6uRCZJXtCdyON2jNXi1dWfXXeS6L3UdRnP8gQkx+r8pEyuKdIN+g5XHIF0cFsxi5AK0xC4FYAE7BmAFoYfw==",
+    "SunamoExtensions/23.12.9.1": {
+      "sha512": "e5cBOK0ao2V5Yw7z2D2+C+Y5vCqHr02l9NyHa+pVDvzbDkp+p3BvR8WczAfGZUjj4sHFTD42p1xUSSK6sUrd9Q==",
       "type": "package",
-      "path": "sunamofubucore/23.11.19.2",
+      "path": "sunamoextensions/23.12.9.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "lib/net8.0/SunamoFubuCore.dll",
-        "sunamofubucore.23.11.19.2.nupkg.sha512",
-        "sunamofubucore.nuspec"
+        "lib/net8.0/SunamoExtensions.dll",
+        "sunamoextensions.23.12.9.1.nupkg.sha512",
+        "sunamoextensions.nuspec"
       ]
     },
-    "SunamoLang/23.11.19.2": {
-      "sha512": "k1BMbuTgVoqhetVQFQNwS5SQdxnr/aQDE4hpSr79wLN9G0oGeY6L7MBOI+zavXOWNz1pd0ncBLz7yp55btARmw==",
+    "SunamoLang/23.12.9.1": {
+      "sha512": "ye1Va2IG51vUBbRM+MtNNpeXDVMzGgbuM5SzGrfZZjw8RbQ4FhpzInG6m+uIIBr+QsK9SKKqH6PvXKjxLm/F6g==",
       "type": "package",
-      "path": "sunamolang/23.11.19.2",
+      "path": "sunamolang/23.12.9.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/net8.0/SunamoLang.dll",
-        "sunamolang.23.11.19.2.nupkg.sha512",
+        "sunamolang.23.12.9.1.nupkg.sha512",
         "sunamolang.nuspec"
       ]
     },
-    "SunamoLaTeX/1.0.9": {
-      "sha512": "+8/y660dVM9p4s8JRncOc/WewFrJe1wZb6JiX2LX86fuvEamezWk8ezr1g1ABXECm3WEBZZqF+x/5WdS86BYEQ==",
+    "SunamoObjectDumperNet/23.12.9.1": {
+      "sha512": "6jSxqY6P0uScillgYgeWi7W2rNzu821NdP8EWEhkWirentfDpDmtv8qUgi/D7JcssdkVtIXweWUxfKFilBBRbA==",
       "type": "package",
-      "path": "sunamolatex/1.0.9",
+      "path": "sunamoobjectdumpernet/23.12.9.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "SunamoLaTeX.png",
-        "lib/netstandard2.0/SunamoLaTeX.dll",
-        "readme.md",
-        "sunamolatex.1.0.9.nupkg.sha512",
-        "sunamolatex.nuspec"
+        "lib/net8.0/SunamoObjectDumperNet.dll",
+        "sunamoobjectdumpernet.23.12.9.1.nupkg.sha512",
+        "sunamoobjectdumpernet.nuspec"
       ]
     },
-    "SunamoShared/23.11.26.1": {
-      "sha512": "WkBSRG4ctyCHmeQhrLUFYn+ZtA04PigmGbYkDG7o5pDUbzrV6EtVY7HY5iQXND4FOAe2zLlezxeo79N5IBx+7Q==",
+    "SunamoShared/23.12.17.2": {
+      "sha512": "uVKEsb2x/MGUwZETjb81bymz5Rb5WiFO31eeog/ZwNRzqtBNLIEusEHscj3EejgFgjU5JPNbXy9aTN5wMSQhUA==",
       "type": "package",
-      "path": "sunamoshared/23.11.26.1",
+      "path": "sunamoshared/23.12.17.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/net8.0/SunamoShared.dll",
-        "sunamoshared.23.11.26.1.nupkg.sha512",
+        "lib/net8.0/cs-CZ/SunamoShared.resources.dll",
+        "lib/net8.0/en-US/SunamoShared.resources.dll",
+        "sunamoshared.23.12.17.2.nupkg.sha512",
         "sunamoshared.nuspec"
+      ]
+    },
+    "SunamoXlf/23.12.9.1": {
+      "sha512": "qRUbwLQA6PhWYiQiNG3S/30K1r9gPCYnXdY0fCz2POxer1aTJ4xKTAtPt9wRjl4hGEuoVxttVXTOYSv/FqTtuA==",
+      "type": "package",
+      "path": "sunamoxlf/23.12.9.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/WinSec/Readme.txt",
+        "contentFiles/any/net8.0/WinSec/Readme.txt",
+        "lib/net8.0/SunamoXlf.dll",
+        "sunamoxlf.23.12.9.1.nupkg.sha512",
+        "sunamoxlf.nuspec"
       ]
     },
     "SunamoXliffParser/1.0.0": {
@@ -1005,15 +931,16 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "System.Configuration.ConfigurationManager/7.0.0": {
-      "sha512": "WvRUdlL1lB0dTRZSs5XcQOd5q9MYNk90GkbmRmiCvRHThWiojkpGqWdmEDJdXyHbxG/BhE5hmVbMfRLXW9FJVA==",
+    "System.Configuration.ConfigurationManager/8.0.0": {
+      "sha512": "JlYi9XVvIREURRUlGMr1F6vOFLk7YSY4p1vHo4kX3tQ0AGrjqlRWHDi66ImHhy6qwXBG3BJ6Y1QlYQ+Qz6Xgww==",
       "type": "package",
-      "path": "system.configuration.configurationmanager/7.0.0",
+      "path": "system.configuration.configurationmanager/8.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
+        "PACKAGE.md",
         "THIRD-PARTY-NOTICES.TXT",
         "buildTransitive/net461/System.Configuration.ConfigurationManager.targets",
         "buildTransitive/net462/_._",
@@ -1025,9 +952,11 @@
         "lib/net6.0/System.Configuration.ConfigurationManager.xml",
         "lib/net7.0/System.Configuration.ConfigurationManager.dll",
         "lib/net7.0/System.Configuration.ConfigurationManager.xml",
+        "lib/net8.0/System.Configuration.ConfigurationManager.dll",
+        "lib/net8.0/System.Configuration.ConfigurationManager.xml",
         "lib/netstandard2.0/System.Configuration.ConfigurationManager.dll",
         "lib/netstandard2.0/System.Configuration.ConfigurationManager.xml",
-        "system.configuration.configurationmanager.7.0.0.nupkg.sha512",
+        "system.configuration.configurationmanager.8.0.0.nupkg.sha512",
         "system.configuration.configurationmanager.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -1051,15 +980,16 @@
         "version.txt"
       ]
     },
-    "System.Diagnostics.EventLog/7.0.0": {
-      "sha512": "eUDP47obqQm3SFJfP6z+Fx2nJ4KKTQbXB4Q9Uesnzw9SbYdhjyoGXuvDn/gEmFY6N5Z3bFFbpAQGA7m6hrYJCw==",
+    "System.Diagnostics.EventLog/8.0.0": {
+      "sha512": "fdYxcRjQqTTacKId/2IECojlDSFvp7LP5N78+0z/xH7v/Tuw5ZAxu23Y6PTCRinqyu2ePx+Gn1098NC6jM6d+A==",
       "type": "package",
-      "path": "system.diagnostics.eventlog/7.0.0",
+      "path": "system.diagnostics.eventlog/8.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
+        "PACKAGE.md",
         "THIRD-PARTY-NOTICES.TXT",
         "buildTransitive/net461/System.Diagnostics.EventLog.targets",
         "buildTransitive/net462/_._",
@@ -1071,6 +1001,8 @@
         "lib/net6.0/System.Diagnostics.EventLog.xml",
         "lib/net7.0/System.Diagnostics.EventLog.dll",
         "lib/net7.0/System.Diagnostics.EventLog.xml",
+        "lib/net8.0/System.Diagnostics.EventLog.dll",
+        "lib/net8.0/System.Diagnostics.EventLog.xml",
         "lib/netstandard2.0/System.Diagnostics.EventLog.dll",
         "lib/netstandard2.0/System.Diagnostics.EventLog.xml",
         "runtimes/win/lib/net6.0/System.Diagnostics.EventLog.Messages.dll",
@@ -1079,7 +1011,10 @@
         "runtimes/win/lib/net7.0/System.Diagnostics.EventLog.Messages.dll",
         "runtimes/win/lib/net7.0/System.Diagnostics.EventLog.dll",
         "runtimes/win/lib/net7.0/System.Diagnostics.EventLog.xml",
-        "system.diagnostics.eventlog.7.0.0.nupkg.sha512",
+        "runtimes/win/lib/net8.0/System.Diagnostics.EventLog.Messages.dll",
+        "runtimes/win/lib/net8.0/System.Diagnostics.EventLog.dll",
+        "runtimes/win/lib/net8.0/System.Diagnostics.EventLog.xml",
+        "system.diagnostics.eventlog.8.0.0.nupkg.sha512",
         "system.diagnostics.eventlog.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -1216,10 +1151,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "System.Security.Permissions/7.0.0": {
-      "sha512": "Vmp0iRmCEno9BWiskOW5pxJ3d9n+jUqKxvX4GhLwFhnQaySZmBN2FuC0N5gjFHgyFMUjC5sfIJ8KZfoJwkcMmA==",
+    "System.Security.Permissions/8.0.0": {
+      "sha512": "v/BBylw7XevuAsHXoX9dDUUfmBIcUf7Lkz8K3ZXIKz3YRKpw8YftpSir4n4e/jDTKFoaK37AsC3xnk+GNFI1Ow==",
       "type": "package",
-      "path": "system.security.permissions/7.0.0",
+      "path": "system.security.permissions/8.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1236,9 +1171,11 @@
         "lib/net6.0/System.Security.Permissions.xml",
         "lib/net7.0/System.Security.Permissions.dll",
         "lib/net7.0/System.Security.Permissions.xml",
+        "lib/net8.0/System.Security.Permissions.dll",
+        "lib/net8.0/System.Security.Permissions.xml",
         "lib/netstandard2.0/System.Security.Permissions.dll",
         "lib/netstandard2.0/System.Security.Permissions.xml",
-        "system.security.permissions.7.0.0.nupkg.sha512",
+        "system.security.permissions.8.0.0.nupkg.sha512",
         "system.security.permissions.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -1298,10 +1235,10 @@
         "version.txt"
       ]
     },
-    "System.Windows.Extensions/7.0.0": {
-      "sha512": "bR4qdCmssMMbo9Fatci49An5B1UaVJZHKNq70PRgzoLYIlitb8Tj7ns/Xt5Pz1CkERiTjcVBDU2y1AVrPBYkaw==",
+    "System.Windows.Extensions/8.0.0": {
+      "sha512": "Obg3a90MkOw9mYKxrardLpY2u0axDMrSmy4JCdq2cYbelM2cUwmUir5Bomvd1yxmPL9h5LVHU1tuKBZpUjfASg==",
       "type": "package",
-      "path": "system.windows.extensions/7.0.0",
+      "path": "system.windows.extensions/8.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1312,11 +1249,15 @@
         "lib/net6.0/System.Windows.Extensions.xml",
         "lib/net7.0/System.Windows.Extensions.dll",
         "lib/net7.0/System.Windows.Extensions.xml",
+        "lib/net8.0/System.Windows.Extensions.dll",
+        "lib/net8.0/System.Windows.Extensions.xml",
         "runtimes/win/lib/net6.0/System.Windows.Extensions.dll",
         "runtimes/win/lib/net6.0/System.Windows.Extensions.xml",
         "runtimes/win/lib/net7.0/System.Windows.Extensions.dll",
         "runtimes/win/lib/net7.0/System.Windows.Extensions.xml",
-        "system.windows.extensions.7.0.0.nupkg.sha512",
+        "runtimes/win/lib/net8.0/System.Windows.Extensions.dll",
+        "runtimes/win/lib/net8.0/System.Windows.Extensions.xml",
+        "system.windows.extensions.8.0.0.nupkg.sha512",
         "system.windows.extensions.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -1347,38 +1288,17 @@
         "yamldotnet.13.7.1.nupkg.sha512",
         "yamldotnet.nuspec"
       ]
-    },
-    "sunamo/1.0.0": {
-      "type": "project",
-      "path": "../sunamo/sunamo.csproj",
-      "msbuildProject": "../sunamo/sunamo.csproj"
-    },
-    "SunamoExtensions/1.0.0": {
-      "type": "project",
-      "path": "../SunamoExtensions/SunamoExtensions.csproj",
-      "msbuildProject": "../SunamoExtensions/SunamoExtensions.csproj"
-    },
-    "SunamoObjectDumperNet/1.0.0": {
-      "type": "project",
-      "path": "../SunamoObjectDumperNet/SunamoObjectDumperNet.csproj",
-      "msbuildProject": "../SunamoObjectDumperNet/SunamoObjectDumperNet.csproj"
-    },
-    "SunamoXlf/1.0.0": {
-      "type": "project",
-      "path": "../SunamoXlf/SunamoXlf.csproj",
-      "msbuildProject": "../SunamoXlf/SunamoXlf.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "Google.Apis.YouTube.v3 >= 1.60.0.2945",
+      "Google.Apis.YouTube.v3 >= 1.64.0.3205",
       "Microsoft.CSharp >= 4.7.0",
-      "sunamo >= 1.0.0"
+      "SunamoShared >= 23.12.17.2"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\sunam\\AppData\\Roaming\\NuGet\\globalPackages": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\r\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -1386,15 +1306,12 @@
       "projectUniqueName": "E:\\vs\\Projects\\sunamo\\SunamoYouTube\\SunamoYouTube.csproj",
       "projectName": "SunamoYouTube",
       "projectPath": "E:\\vs\\Projects\\sunamo\\SunamoYouTube\\SunamoYouTube.csproj",
-      "packagesPath": "C:\\Users\\sunam\\AppData\\Roaming\\NuGet\\globalPackages",
+      "packagesPath": "C:\\Users\\r\\.nuget\\packages\\",
       "outputPath": "E:\\vs\\Projects\\sunamo\\SunamoYouTube\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\sunam\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "E:\\vs\\Projects\\sunamo\\.nuget\\NuGet.Config",
+        "C:\\Users\\r\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1402,17 +1319,12 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://devops.skoda.vwgroup.com/projects/EOM-7/C3PO/_packaging/C3PO.Common/nuget/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {
-            "E:\\vs\\Projects\\sunamo\\sunamo\\sunamo.csproj": {
-              "projectPath": "E:\\vs\\Projects\\sunamo\\sunamo\\sunamo.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
@@ -1427,11 +1339,15 @@
         "dependencies": {
           "Google.Apis.YouTube.v3": {
             "target": "Package",
-            "version": "[1.60.0.2945, )"
+            "version": "[1.64.0.3205, )"
           },
           "Microsoft.CSharp": {
             "target": "Package",
             "version": "[4.7.0, )"
+          },
+          "SunamoShared": {
+            "target": "Package",
+            "version": "[23.12.17.2, )"
           }
         },
         "imports": [

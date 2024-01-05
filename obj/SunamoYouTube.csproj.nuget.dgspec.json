@@ -4,243 +4,18 @@
     "E:\\vs\\Projects\\sunamo\\SunamoYouTube\\SunamoYouTube.csproj": {}
   },
   "projects": {
-    "E:\\vs\\Projects\\sunamo\\SunamoExtensions\\SunamoExtensions.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "E:\\vs\\Projects\\sunamo\\SunamoExtensions\\SunamoExtensions.csproj",
-        "projectName": "SunamoExtensions",
-        "projectPath": "E:\\vs\\Projects\\sunamo\\SunamoExtensions\\SunamoExtensions.csproj",
-        "packagesPath": "C:\\Users\\sunam\\AppData\\Roaming\\NuGet\\globalPackages",
-        "outputPath": "E:\\vs\\Projects\\sunamo\\SunamoExtensions\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\sunam\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net8.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://devops.skoda.vwgroup.com/projects/EOM-7/C3PO/_packaging/C3PO.Common/nuget/v3/index.json": {}
-        },
-        "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
-            "projectReferences": {}
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
-          "dependencies": {
-            "SunamoExceptions": {
-              "target": "Package",
-              "version": "[23.11.19.2, )"
-            },
-            "SunamoShared": {
-              "target": "Package",
-              "version": "[23.11.26.1, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "E:\\vs\\Projects\\sunamo\\SunamoObjectDumperNet\\SunamoObjectDumperNet.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "E:\\vs\\Projects\\sunamo\\SunamoObjectDumperNet\\SunamoObjectDumperNet.csproj",
-        "projectName": "SunamoObjectDumperNet",
-        "projectPath": "E:\\vs\\Projects\\sunamo\\SunamoObjectDumperNet\\SunamoObjectDumperNet.csproj",
-        "packagesPath": "C:\\Users\\sunam\\AppData\\Roaming\\NuGet\\globalPackages",
-        "outputPath": "E:\\vs\\Projects\\sunamo\\SunamoObjectDumperNet\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\sunam\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net8.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://devops.skoda.vwgroup.com/projects/EOM-7/C3PO/_packaging/C3PO.Common/nuget/v3/index.json": {}
-        },
-        "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
-            "projectReferences": {}
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
-          "dependencies": {
-            "ObjectDumper.NET": {
-              "target": "Package",
-              "version": "[4.1.3, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "E:\\vs\\Projects\\sunamo\\SunamoXlf\\SunamoXlf.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "E:\\vs\\Projects\\sunamo\\SunamoXlf\\SunamoXlf.csproj",
-        "projectName": "SunamoXlf",
-        "projectPath": "E:\\vs\\Projects\\sunamo\\SunamoXlf\\SunamoXlf.csproj",
-        "packagesPath": "C:\\Users\\sunam\\AppData\\Roaming\\NuGet\\globalPackages",
-        "outputPath": "E:\\vs\\Projects\\sunamo\\SunamoXlf\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\sunam\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net8.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://devops.skoda.vwgroup.com/projects/EOM-7/C3PO/_packaging/C3PO.Common/nuget/v3/index.json": {}
-        },
-        "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
-            "projectReferences": {}
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
-          "dependencies": {
-            "Microsoft.CSharp": {
-              "target": "Package",
-              "version": "[4.7.0, )"
-            },
-            "SunamoShared": {
-              "target": "Package",
-              "version": "[23.11.26.1, )"
-            },
-            "SunamoXliffParser": {
-              "target": "Package",
-              "version": "[1.0.0, )"
-            },
-            "System.Data.DataSetExtensions": {
-              "target": "Package",
-              "version": "[4.5.0, )"
-            },
-            "System.Memory": {
-              "target": "Package",
-              "version": "[4.5.5, )"
-            },
-            "System.Security.Principal.Windows": {
-              "target": "Package",
-              "version": "[5.0.0, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
-        }
-      }
-    },
     "E:\\vs\\Projects\\sunamo\\SunamoYouTube\\SunamoYouTube.csproj": {
       "version": "1.0.0",
       "restore": {
         "projectUniqueName": "E:\\vs\\Projects\\sunamo\\SunamoYouTube\\SunamoYouTube.csproj",
         "projectName": "SunamoYouTube",
         "projectPath": "E:\\vs\\Projects\\sunamo\\SunamoYouTube\\SunamoYouTube.csproj",
-        "packagesPath": "C:\\Users\\sunam\\AppData\\Roaming\\NuGet\\globalPackages",
+        "packagesPath": "C:\\Users\\r\\.nuget\\packages\\",
         "outputPath": "E:\\vs\\Projects\\sunamo\\SunamoYouTube\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\sunam\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "E:\\vs\\Projects\\sunamo\\.nuget\\NuGet.Config",
+          "C:\\Users\\r\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -248,17 +23,12 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://devops.skoda.vwgroup.com/projects/EOM-7/C3PO/_packaging/C3PO.Common/nuget/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {
-              "E:\\vs\\Projects\\sunamo\\sunamo\\sunamo.csproj": {
-                "projectPath": "E:\\vs\\Projects\\sunamo\\sunamo\\sunamo.csproj"
-              }
-            }
+            "projectReferences": {}
           }
         },
         "warningProperties": {
@@ -273,135 +43,15 @@
           "dependencies": {
             "Google.Apis.YouTube.v3": {
               "target": "Package",
-              "version": "[1.60.0.2945, )"
+              "version": "[1.64.0.3205, )"
             },
             "Microsoft.CSharp": {
               "target": "Package",
               "version": "[4.7.0, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "E:\\vs\\Projects\\sunamo\\sunamo\\sunamo.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "E:\\vs\\Projects\\sunamo\\sunamo\\sunamo.csproj",
-        "projectName": "sunamo",
-        "projectPath": "E:\\vs\\Projects\\sunamo\\sunamo\\sunamo.csproj",
-        "packagesPath": "C:\\Users\\sunam\\AppData\\Roaming\\NuGet\\globalPackages",
-        "outputPath": "E:\\vs\\Projects\\sunamo\\sunamo\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\sunam\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net8.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://devops.skoda.vwgroup.com/projects/EOM-7/C3PO/_packaging/C3PO.Common/nuget/v3/index.json": {}
-        },
-        "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
-            "projectReferences": {
-              "E:\\vs\\Projects\\sunamo\\SunamoExtensions\\SunamoExtensions.csproj": {
-                "projectPath": "E:\\vs\\Projects\\sunamo\\SunamoExtensions\\SunamoExtensions.csproj"
-              },
-              "E:\\vs\\Projects\\sunamo\\SunamoObjectDumperNet\\SunamoObjectDumperNet.csproj": {
-                "projectPath": "E:\\vs\\Projects\\sunamo\\SunamoObjectDumperNet\\SunamoObjectDumperNet.csproj"
-              },
-              "E:\\vs\\Projects\\sunamo\\SunamoXlf\\SunamoXlf.csproj": {
-                "projectPath": "E:\\vs\\Projects\\sunamo\\SunamoXlf\\SunamoXlf.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
-          "dependencies": {
-            "Diacritics": {
-              "target": "Package",
-              "version": "[3.3.18, )"
-            },
-            "HtmlAgilityPack": {
-              "target": "Package",
-              "version": "[1.11.54, )"
-            },
-            "ObjectDumper.NET": {
-              "target": "Package",
-              "version": "[4.1.3, )"
-            },
-            "SunamoBitLockerManager": {
-              "target": "Package",
-              "version": "[1.0.3, )"
-            },
-            "SunamoCl": {
-              "target": "Package",
-              "version": "[23.11.19.2, )"
-            },
-            "SunamoExceptions": {
-              "target": "Package",
-              "version": "[*, )"
-            },
-            "SunamoFubuCore": {
-              "target": "Package",
-              "version": "[23.11.19.2, )"
-            },
-            "SunamoLang": {
-              "target": "Package",
-              "version": "[23.11.19.2, )"
             },
             "SunamoShared": {
               "target": "Package",
-              "version": "[*, )"
-            },
-            "System.Drawing.Common": {
-              "target": "Package",
-              "version": "[8.0.0, )"
-            },
-            "System.Management": {
-              "target": "Package",
-              "version": "[8.0.0, )"
-            },
-            "System.Security.Cryptography.ProtectedData": {
-              "target": "Package",
-              "version": "[8.0.0, )"
-            },
-            "YamlDotNet": {
-              "target": "Package",
-              "version": "[13.7.1, )"
+              "version": "[23.12.17.2, )"
             }
           },
           "imports": [
