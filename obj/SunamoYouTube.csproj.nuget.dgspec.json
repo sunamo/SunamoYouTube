@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\vs\\Projects\\sunamo\\SunamoYouTube\\SunamoYouTube.csproj": {}
+    "E:\\vs\\Projects\\sunamoWithoutLocalDep\\SunamoYouTube\\SunamoYouTube.csproj": {}
   },
   "projects": {
-    "E:\\vs\\Projects\\sunamo\\SunamoYouTube\\SunamoYouTube.csproj": {
-      "version": "1.0.0",
+    "E:\\vs\\Projects\\sunamoWithoutLocalDep\\SunamoYouTube\\SunamoYouTube.csproj": {
+      "version": "24.1.7.1",
       "restore": {
-        "projectUniqueName": "E:\\vs\\Projects\\sunamo\\SunamoYouTube\\SunamoYouTube.csproj",
+        "projectUniqueName": "E:\\vs\\Projects\\sunamoWithoutLocalDep\\SunamoYouTube\\SunamoYouTube.csproj",
         "projectName": "SunamoYouTube",
-        "projectPath": "E:\\vs\\Projects\\sunamo\\SunamoYouTube\\SunamoYouTube.csproj",
+        "projectPath": "E:\\vs\\Projects\\sunamoWithoutLocalDep\\SunamoYouTube\\SunamoYouTube.csproj",
         "packagesPath": "C:\\Users\\r\\.nuget\\packages\\",
-        "outputPath": "E:\\vs\\Projects\\sunamo\\SunamoYouTube\\obj\\",
+        "outputPath": "E:\\vs\\Projects\\sunamoWithoutLocalDep\\SunamoYouTube\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "E:\\vs\\Projects\\sunamo\\.nuget\\NuGet.Config",
+          "E:\\vs\\Projects\\sunamoWithoutLocalDep\\.nuget\\NuGet.Config",
           "C:\\Users\\r\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -49,9 +49,13 @@
               "target": "Package",
               "version": "[4.7.0, )"
             },
-            "SunamoShared": {
+            "SunamoCollections": {
               "target": "Package",
-              "version": "[23.12.17.2, )"
+              "version": "[24.1.7.1, )"
+            },
+            "SunamoUri": {
+              "target": "Package",
+              "version": "[24.1.5.1, )"
             }
           },
           "imports": [
