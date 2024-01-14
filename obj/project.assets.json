@@ -2,10 +2,10 @@
   "version": 3,
   "targets": {
     "net8.0": {
-      "Google.Apis/1.64.0": {
+      "Google.Apis/1.65.0": {
         "type": "package",
         "dependencies": {
-          "Google.Apis.Core": "1.64.0"
+          "Google.Apis.Core": "1.65.0"
         },
         "compile": {
           "lib/netstandard2.0/Google.Apis.dll": {
@@ -18,11 +18,11 @@
           }
         }
       },
-      "Google.Apis.Auth/1.64.0": {
+      "Google.Apis.Auth/1.65.0": {
         "type": "package",
         "dependencies": {
-          "Google.Apis": "1.64.0",
-          "Google.Apis.Core": "1.64.0",
+          "Google.Apis": "1.65.0",
+          "Google.Apis.Core": "1.65.0",
           "System.Management": "7.0.2"
         },
         "compile": {
@@ -38,7 +38,7 @@
           }
         }
       },
-      "Google.Apis.Core/1.64.0": {
+      "Google.Apis.Core/1.65.0": {
         "type": "package",
         "dependencies": {
           "Newtonsoft.Json": "13.0.3"
@@ -54,11 +54,11 @@
           }
         }
       },
-      "Google.Apis.YouTube.v3/1.64.0.3205": {
+      "Google.Apis.YouTube.v3/1.65.0.3205": {
         "type": "package",
         "dependencies": {
-          "Google.Apis": "1.64.0",
-          "Google.Apis.Auth": "1.64.0"
+          "Google.Apis": "1.65.0",
+          "Google.Apis.Auth": "1.65.0"
         },
         "compile": {
           "lib/netstandard2.0/Google.Apis.YouTube.v3.dll": {
@@ -115,10 +115,10 @@
           "lib/netstandard2.1/System.Resources.NetStandard.dll": {}
         }
       },
-      "SunamoArgs/24.1.5.5": {
+      "SunamoArgs/24.1.9.1": {
         "type": "package",
         "dependencies": {
-          "SunamoEnums": "24.1.5.1"
+          "SunamoEnums": "24.1.7.2"
         },
         "compile": {
           "lib/net8.0/SunamoArgs.dll": {}
@@ -127,7 +127,7 @@
           "lib/net8.0/SunamoArgs.dll": {}
         }
       },
-      "SunamoAttributes/24.1.5.1": {
+      "SunamoAttributes/24.1.7.1": {
         "type": "package",
         "compile": {
           "lib/net8.0/SunamoAttributes.dll": {}
@@ -151,42 +151,42 @@
           "lib/net8.0/SunamoBts.dll": {}
         }
       },
-      "SunamoChar/24.1.5.2": {
+      "SunamoChar/24.1.7.1": {
         "type": "package",
         "dependencies": {
-          "SunamoDebugCollection": "24.1.4.1",
-          "SunamoEnums": "24.1.5.1",
-          "SunamoExceptions": "24.1.4.1",
-          "SunamoI18N": "24.1.4.1",
-          "SunamoValues": "24.1.4.1"
-        },
-        "compile": {
-          "lib/net8.0/SunamoChar.dll": {}
-        },
-        "runtime": {
-          "lib/net8.0/SunamoChar.dll": {}
-        }
-      },
-      "SunamoCollections/24.1.7.1": {
-        "type": "package",
-        "dependencies": {
-          "SunamoArgs": "24.1.5.5",
-          "SunamoAttributes": "24.1.5.1",
-          "SunamoChar": "24.1.5.2",
-          "SunamoCollectionWithoutDuplicates": "24.1.5.1",
-          "SunamoCollectionsChangeContent": "24.1.5.3",
-          "SunamoCollectionsGeneric": "24.1.5.1",
-          "SunamoData": "24.1.5.5",
+          "SunamoDebugCollection": "24.1.5.1",
           "SunamoEnums": "24.1.7.1",
           "SunamoExceptions": "24.1.5.1",
+          "SunamoI18N": "24.1.7.1",
+          "SunamoValues": "24.1.7.1"
+        },
+        "compile": {
+          "lib/net8.0/SunamoChar.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/SunamoChar.dll": {}
+        }
+      },
+      "SunamoCollections/24.1.10.1": {
+        "type": "package",
+        "dependencies": {
+          "SunamoArgs": "24.1.9.1",
+          "SunamoAttributes": "24.1.7.1",
+          "SunamoChar": "24.1.7.1",
+          "SunamoCollectionWithoutDuplicates": "24.1.5.1",
+          "SunamoCollectionsChangeContent": "24.1.7.1",
+          "SunamoCollectionsGeneric": "24.1.5.1",
+          "SunamoData": "24.1.5.5",
+          "SunamoEnums": "24.1.7.2",
+          "SunamoExceptions": "24.1.5.1",
           "SunamoExtensions": "24.1.5.1",
-          "SunamoInterfaces": "24.1.5.1",
-          "SunamoPercentCalculator": "24.1.5.1",
+          "SunamoInterfaces": "24.1.7.1",
+          "SunamoPercentCalculator": "24.1.7.1",
           "SunamoPlatformUwpInterop": "24.1.5.1",
-          "SunamoStringGetLines": "24.1.5.1",
+          "SunamoStringGetLines": "24.1.7.1",
           "SunamoStringReplace": "24.1.5.1",
           "SunamoStringSplit": "24.1.5.1",
-          "SunamoTextOutputGenerator": "24.1.5.1"
+          "SunamoTextOutputGenerator": "24.1.7.1"
         },
         "compile": {
           "lib/net8.0/SunamoCollections.dll": {}
@@ -195,10 +195,10 @@
           "lib/net8.0/SunamoCollections.dll": {}
         }
       },
-      "SunamoCollectionsChangeContent/24.1.5.3": {
+      "SunamoCollectionsChangeContent/24.1.7.1": {
         "type": "package",
         "dependencies": {
-          "SunamoArgs": "24.1.5.4"
+          "SunamoArgs": "24.1.5.5"
         },
         "compile": {
           "lib/net8.0/SunamoCollectionsChangeContent.dll": {}
@@ -239,7 +239,7 @@
           "lib/net8.0/SunamoCollectionWithoutDuplicates.dll": {}
         }
       },
-      "SunamoColors/23.12.19.1": {
+      "SunamoColors/24.1.7.1": {
         "type": "package",
         "compile": {
           "lib/net8.0/SunamoColors.dll": {}
@@ -266,7 +266,7 @@
           "lib/net8.0/SunamoData.dll": {}
         }
       },
-      "SunamoDebugCollection/24.1.4.1": {
+      "SunamoDebugCollection/24.1.5.1": {
         "type": "package",
         "compile": {
           "lib/net8.0/SunamoDebugCollection.dll": {}
@@ -275,7 +275,7 @@
           "lib/net8.0/SunamoDebugCollection.dll": {}
         }
       },
-      "SunamoDelegates/24.1.4.1": {
+      "SunamoDelegates/24.1.5.1": {
         "type": "package",
         "compile": {
           "lib/net8.0/SunamoDelegates.dll": {}
@@ -284,15 +284,15 @@
           "lib/net8.0/SunamoDelegates.dll": {}
         }
       },
-      "SunamoDictionary/24.1.4.1": {
+      "SunamoDictionary/24.1.7.1": {
         "type": "package",
         "dependencies": {
-          "SunamoCollectionWithoutDuplicates": "23.12.22.1",
-          "SunamoCollectionsGeneric": "23.12.30.1",
-          "SunamoData": "24.1.1.1",
-          "SunamoStringSplit": "24.1.2.2",
-          "SunamoTextOutputGenerator": "24.1.1.1",
-          "SunamoValues": "24.1.1.6"
+          "SunamoCollectionWithoutDuplicates": "24.1.5.1",
+          "SunamoCollectionsGeneric": "24.1.5.1",
+          "SunamoData": "24.1.5.5",
+          "SunamoStringSplit": "24.1.5.1",
+          "SunamoTextOutputGenerator": "24.1.5.1",
+          "SunamoValues": "24.1.7.1"
         },
         "compile": {
           "lib/net8.0/SunamoDictionary.dll": {}
@@ -301,7 +301,7 @@
           "lib/net8.0/SunamoDictionary.dll": {}
         }
       },
-      "SunamoEnums/24.1.7.1": {
+      "SunamoEnums/24.1.7.2": {
         "type": "package",
         "compile": {
           "lib/net8.0/SunamoEnums.dll": {}
@@ -339,7 +339,7 @@
           "lib/net8.0/SunamoExtensions.dll": {}
         }
       },
-      "SunamoFileExtensions/24.1.1.1": {
+      "SunamoFileExtensions/24.1.7.1": {
         "type": "package",
         "compile": {
           "lib/net8.0/SunamoFileExtensions.dll": {}
@@ -365,12 +365,13 @@
           "lib/net8.0/SunamoFileIO.dll": {}
         }
       },
-      "SunamoI18N/24.1.4.1": {
+      "SunamoI18N/24.1.9.1": {
         "type": "package",
         "dependencies": {
-          "SunamoLang": "23.12.9.1",
-          "SunamoThisApp": "23.12.20.2",
-          "SunamoXlf": "23.12.9.1"
+          "SunamoLang": "24.1.9.1",
+          "SunamoThisApp": "24.1.5.4",
+          "SunamoValues": "24.1.9.2",
+          "SunamoXlf": "24.1.7.4"
         },
         "compile": {
           "lib/net8.0/SunamoI18N.dll": {}
@@ -379,17 +380,17 @@
           "lib/net8.0/SunamoI18N.dll": {}
         }
       },
-      "SunamoInterfaces/24.1.5.1": {
+      "SunamoInterfaces/24.1.7.1": {
         "type": "package",
         "dependencies": {
           "HtmlAgilityPack": "1.11.57",
           "Newtonsoft.Json": "13.0.3",
-          "SunamoArgs": "24.1.5.4",
-          "SunamoDelegates": "24.1.4.1",
-          "SunamoEnums": "24.1.5.1",
-          "SunamoExceptions": "24.1.4.1",
-          "SunamoTextBuilder": "24.1.4.1",
-          "SunamoTextOutputGenerator": "24.1.4.1"
+          "SunamoArgs": "24.1.5.5",
+          "SunamoDelegates": "24.1.5.1",
+          "SunamoEnums": "24.1.7.1",
+          "SunamoExceptions": "24.1.5.1",
+          "SunamoTextBuilder": "24.1.5.1",
+          "SunamoTextOutputGenerator": "24.1.5.1"
         },
         "compile": {
           "lib/net8.0/SunamoInterfaces.dll": {}
@@ -398,11 +399,8 @@
           "lib/net8.0/SunamoInterfaces.dll": {}
         }
       },
-      "SunamoLang/24.1.4.1": {
+      "SunamoLang/24.1.9.1": {
         "type": "package",
-        "dependencies": {
-          "SunamoExceptions": "24.1.1.3"
-        },
         "compile": {
           "lib/net8.0/SunamoLang.dll": {}
         },
@@ -410,10 +408,10 @@
           "lib/net8.0/SunamoLang.dll": {}
         }
       },
-      "SunamoPercentCalculator/24.1.5.1": {
+      "SunamoPercentCalculator/24.1.7.1": {
         "type": "package",
         "dependencies": {
-          "SunamoExceptions": "24.1.4.1"
+          "SunamoExceptions": "24.1.5.1"
         },
         "compile": {
           "lib/net8.0/SunamoPercentCalculator.dll": {}
@@ -450,10 +448,10 @@
           "lib/net8.0/SunamoRegex.dll": {}
         }
       },
-      "SunamoStringData/24.1.5.3": {
+      "SunamoStringData/24.1.5.4": {
         "type": "package",
         "dependencies": {
-          "SunamoData": "24.1.5.1",
+          "SunamoData": "24.1.5.4",
           "SunamoExceptions": "24.1.4.1"
         },
         "compile": {
@@ -463,7 +461,7 @@
           "lib/net8.0/SunamoStringData.dll": {}
         }
       },
-      "SunamoStringGetLines/24.1.5.1": {
+      "SunamoStringGetLines/24.1.7.1": {
         "type": "package",
         "compile": {
           "lib/net8.0/SunamoStringGetLines.dll": {}
@@ -500,11 +498,38 @@
           "lib/net8.0/SunamoStringSplit.dll": {}
         }
       },
-      "SunamoTextBuilder/24.1.4.1": {
+      "SunamoStringSubstring/24.1.7.1": {
         "type": "package",
         "dependencies": {
-          "SunamoExceptions": "24.1.1.3",
-          "SunamoTextBuilderShared": "23.12.21.2"
+          "SunamoArgs": "24.1.5.5",
+          "SunamoExceptions": "24.1.5.1"
+        },
+        "compile": {
+          "lib/net8.0/SunamoStringSubstring.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/SunamoStringSubstring.dll": {}
+        }
+      },
+      "SunamoStringTrim/24.1.7.1": {
+        "type": "package",
+        "dependencies": {
+          "SunamoChar": "24.1.5.2",
+          "SunamoStringData": "24.1.5.4",
+          "SunamoStringReplace": "24.1.5.1"
+        },
+        "compile": {
+          "lib/net8.0/SunamoStringTrim.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/SunamoStringTrim.dll": {}
+        }
+      },
+      "SunamoTextBuilder/24.1.5.1": {
+        "type": "package",
+        "dependencies": {
+          "SunamoExceptions": "24.1.4.1",
+          "SunamoTextBuilderShared": "24.1.4.1"
         },
         "compile": {
           "lib/net8.0/SunamoTextBuilder.dll": {}
@@ -513,7 +538,7 @@
           "lib/net8.0/SunamoTextBuilder.dll": {}
         }
       },
-      "SunamoTextBuilderShared/24.1.4.1": {
+      "SunamoTextBuilderShared/24.1.5.1": {
         "type": "package",
         "compile": {
           "lib/net8.0/SunamoTextBuilderShared.dll": {}
@@ -522,12 +547,12 @@
           "lib/net8.0/SunamoTextBuilderShared.dll": {}
         }
       },
-      "SunamoTextOutputGenerator/24.1.5.1": {
+      "SunamoTextOutputGenerator/24.1.7.1": {
         "type": "package",
         "dependencies": {
-          "SunamoTextBuilderShared": "24.1.4.1",
-          "SunamoTextOutputGeneratorShared": "24.1.4.1",
-          "SunamoValues": "24.1.4.1"
+          "SunamoTextBuilderShared": "24.1.5.1",
+          "SunamoTextOutputGeneratorShared": "24.1.5.1",
+          "SunamoValues": "24.1.7.1"
         },
         "compile": {
           "lib/net8.0/SunamoTextOutputGenerator.dll": {}
@@ -536,7 +561,7 @@
           "lib/net8.0/SunamoTextOutputGenerator.dll": {}
         }
       },
-      "SunamoTextOutputGeneratorShared/24.1.4.1": {
+      "SunamoTextOutputGeneratorShared/24.1.5.1": {
         "type": "package",
         "compile": {
           "lib/net8.0/SunamoTextOutputGeneratorShared.dll": {}
@@ -545,13 +570,13 @@
           "lib/net8.0/SunamoTextOutputGeneratorShared.dll": {}
         }
       },
-      "SunamoThisApp/24.1.5.3": {
+      "SunamoThisApp/24.1.5.4": {
         "type": "package",
         "dependencies": {
           "SunamoEnums": "24.1.5.1",
           "SunamoLang": "24.1.4.1",
           "SunamoTypeOfMessage": "24.1.5.1",
-          "SunamoXlf": "24.1.5.1"
+          "SunamoXlf": "24.1.5.3"
         },
         "compile": {
           "lib/net8.0/SunamoThisApp.dll": {}
@@ -569,7 +594,7 @@
           "lib/net8.0/SunamoThread.dll": {}
         }
       },
-      "SunamoTwoWayDictionary/23.12.19.1": {
+      "SunamoTwoWayDictionary/24.1.7.1": {
         "type": "package",
         "compile": {
           "lib/net8.0/SunamoTwoWayDictionary.dll": {}
@@ -599,14 +624,17 @@
           "lib/net8.0/SunamoUnderscore.dll": {}
         }
       },
-      "SunamoUri/24.1.5.1": {
+      "SunamoUri/24.1.10.1": {
         "type": "package",
         "dependencies": {
-          "SunamoArgs": "24.1.5.4",
-          "SunamoDictionary": "24.1.4.1",
-          "SunamoExceptions": "24.1.4.1",
-          "SunamoStringReplace": "24.1.4.1",
-          "SunamoValues": "24.1.4.1"
+          "SunamoArgs": "24.1.9.1",
+          "SunamoDictionary": "24.1.7.1",
+          "SunamoExceptions": "24.1.5.1",
+          "SunamoI18N": "24.1.9.1",
+          "SunamoStringReplace": "24.1.5.1",
+          "SunamoStringSubstring": "24.1.7.1",
+          "SunamoStringTrim": "24.1.7.1",
+          "SunamoValues": "24.1.9.2"
         },
         "compile": {
           "lib/net8.0/SunamoUri.dll": {}
@@ -615,12 +643,12 @@
           "lib/net8.0/SunamoUri.dll": {}
         }
       },
-      "SunamoValues/24.1.4.1": {
+      "SunamoValues/24.1.9.2": {
         "type": "package",
         "dependencies": {
-          "SunamoColors": "23.12.19.1",
-          "SunamoFileExtensions": "24.1.1.1",
-          "SunamoTwoWayDictionary": "23.12.19.1"
+          "SunamoColors": "24.1.7.1",
+          "SunamoFileExtensions": "24.1.7.1",
+          "SunamoTwoWayDictionary": "24.1.7.1"
         },
         "compile": {
           "lib/net8.0/SunamoValues.dll": {}
@@ -629,10 +657,11 @@
           "lib/net8.0/SunamoValues.dll": {}
         }
       },
-      "SunamoXlf/24.1.5.1": {
+      "SunamoXlf/24.1.7.4": {
         "type": "package",
         "dependencies": {
           "Microsoft.CSharp": "4.7.0",
+          "SunamoLang": "24.1.7.2",
           "SunamoXliffParser": "24.1.1.1",
           "System.Data.DataSetExtensions": "4.5.0",
           "System.Memory": "4.5.5",
@@ -744,16 +773,16 @@
     }
   },
   "libraries": {
-    "Google.Apis/1.64.0": {
-      "sha512": "0ki3AJDiTuV5Cb7NUyq+0DDGDLWcPCKbZC1HgyvAW+o/I0rY/HXMvv6IAF65hhfbQB/Scfm8nuAW3weNEXYkxw==",
+    "Google.Apis/1.65.0": {
+      "sha512": "TTnTAuRL236ikkpXdAFtkrZoZTSstuO4JQohWAko1cxOpN3Y1DeBC5Y4f7nXyD6wCQwa+tpE1Au8eqx14Hr+yA==",
       "type": "package",
-      "path": "google.apis/1.64.0",
+      "path": "google.apis/1.65.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "NuGetIcon.png",
-        "google.apis.1.64.0.nupkg.sha512",
+        "google.apis.1.65.0.nupkg.sha512",
         "google.apis.nuspec",
         "lib/net45/Google.Apis.PlatformServices.dll",
         "lib/net45/Google.Apis.dll",
@@ -767,16 +796,16 @@
         "lib/netstandard2.0/Google.Apis.xml"
       ]
     },
-    "Google.Apis.Auth/1.64.0": {
-      "sha512": "u3cwX0E3IpAkROzRPgZtohFSS2DUblkSmwMfh3/2Qwbi/QXHd8ebq2JuCNqmfpJyfgW5AG0+fO0UrrLsYtglMQ==",
+    "Google.Apis.Auth/1.65.0": {
+      "sha512": "6yDd5sT6RkY6GH6gLvpdK5Fmp4jS+Bnxmospt/kRos7DyUoAvJNiRVEmpWMYOLwKLk0dq1ZTLoehtSH1b+sBdQ==",
       "type": "package",
-      "path": "google.apis.auth/1.64.0",
+      "path": "google.apis.auth/1.65.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "NuGetIcon.png",
-        "google.apis.auth.1.64.0.nupkg.sha512",
+        "google.apis.auth.1.65.0.nupkg.sha512",
         "google.apis.auth.nuspec",
         "lib/net45/Google.Apis.Auth.PlatformServices.dll",
         "lib/net45/Google.Apis.Auth.dll",
@@ -796,16 +825,16 @@
         "lib/netstandard2.0/Google.Apis.Auth.xml"
       ]
     },
-    "Google.Apis.Core/1.64.0": {
-      "sha512": "bqrUhDeMFeMdjtv4QT4Z99WDPSEbS6EKnp1bYvqyc/VpEu4oFNMqw8/bk/7SS7Ko+bodDgum8fkvDwCMZtdWDg==",
+    "Google.Apis.Core/1.65.0": {
+      "sha512": "qxOBkSZxqk9Ei6PElvyut4aOJBBwK438LO/n50gBxqsVjuJCJNZcSAli0sf0AX22bY/RqdzKK47rPGoEfRba/w==",
       "type": "package",
-      "path": "google.apis.core/1.64.0",
+      "path": "google.apis.core/1.65.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "NuGetIcon.png",
-        "google.apis.core.1.64.0.nupkg.sha512",
+        "google.apis.core.1.65.0.nupkg.sha512",
         "google.apis.core.nuspec",
         "lib/net45/Google.Apis.Core.dll",
         "lib/net45/Google.Apis.Core.pdb",
@@ -818,16 +847,16 @@
         "lib/netstandard2.0/Google.Apis.Core.xml"
       ]
     },
-    "Google.Apis.YouTube.v3/1.64.0.3205": {
-      "sha512": "5xJKKc2Is/cwI1JeX3ju4uPumPkEu95fjyEJHpTEsg8OVJhrHRxoj+7oMku1cvHFfMno6Wn0W+oJ20wANDZPaw==",
+    "Google.Apis.YouTube.v3/1.65.0.3205": {
+      "sha512": "o0SC3fMnICJ4Sb/YvdyWmNUVV+urbDL/oP6x7gLFDUxVOhFtCUEruNV/VwHcbYqvgUlQGpPaZyDcY1k6nGQMiA==",
       "type": "package",
-      "path": "google.apis.youtube.v3/1.64.0.3205",
+      "path": "google.apis.youtube.v3/1.65.0.3205",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "NuGetIcon.png",
-        "google.apis.youtube.v3.1.64.0.3205.nupkg.sha512",
+        "google.apis.youtube.v3.1.65.0.3205.nupkg.sha512",
         "google.apis.youtube.v3.nuspec",
         "lib/net45/Google.Apis.YouTube.v3.dll",
         "lib/net45/Google.Apis.YouTube.v3.pdb",
@@ -1001,27 +1030,27 @@
         "resxresourcereader.netstandard.nuspec"
       ]
     },
-    "SunamoArgs/24.1.5.5": {
-      "sha512": "cquVPb/jhTZ0AwS9dYsKCjz/vY3TxIYPcQ2XBObIegrfKNJ8v/Hb2WSAvbj3yLfhdvUYoQSHDUYbupatsNgC7w==",
+    "SunamoArgs/24.1.9.1": {
+      "sha512": "9Yg3GWLxddN+s1/bmapnYRLDhR0FNVX+rfQLxUcB92uafvdNNmC0nS6ocPoMhFmuz2KG63gCDE5Vwe/fqKo0Kw==",
       "type": "package",
-      "path": "sunamoargs/24.1.5.5",
+      "path": "sunamoargs/24.1.9.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/net8.0/SunamoArgs.dll",
-        "sunamoargs.24.1.5.5.nupkg.sha512",
+        "sunamoargs.24.1.9.1.nupkg.sha512",
         "sunamoargs.nuspec"
       ]
     },
-    "SunamoAttributes/24.1.5.1": {
-      "sha512": "gL0R3tixsnPZeqpigUhQzCN+c38aMEWhA3ymh3joPENmcPgAr2ar50PraAMdozTBeBz6eAU9OFi6RswnawU4JQ==",
+    "SunamoAttributes/24.1.7.1": {
+      "sha512": "LxuacvsCGuhSxG/+taKMVA9g9OPphuRafqGSXLjMYaEwi94NSTQNP0tsa5dlgtlTnR0k3DPwlKsDENlp4O6YzA==",
       "type": "package",
-      "path": "sunamoattributes/24.1.5.1",
+      "path": "sunamoattributes/24.1.7.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/net8.0/SunamoAttributes.dll",
-        "sunamoattributes.24.1.5.1.nupkg.sha512",
+        "sunamoattributes.24.1.7.1.nupkg.sha512",
         "sunamoattributes.nuspec"
       ]
     },
@@ -1037,39 +1066,39 @@
         "sunamobts.nuspec"
       ]
     },
-    "SunamoChar/24.1.5.2": {
-      "sha512": "SUg7B0dSyTIEsB/HYGwev2hIC0C4KxvvOQ9anWCv8LTGot8Gjfh8R5cR2IeIagIGj0dQt2AO96L7K7NLx1Z7nA==",
+    "SunamoChar/24.1.7.1": {
+      "sha512": "Xt8u/BTrNO+e/6V28Ma6/kncF4ZXJ78L4LBeLOnXUWAppcbuphz4CpFb6SvhDhhjETITZppzmtxTtY2e1MODEw==",
       "type": "package",
-      "path": "sunamochar/24.1.5.2",
+      "path": "sunamochar/24.1.7.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/net8.0/SunamoChar.dll",
-        "sunamochar.24.1.5.2.nupkg.sha512",
+        "sunamochar.24.1.7.1.nupkg.sha512",
         "sunamochar.nuspec"
       ]
     },
-    "SunamoCollections/24.1.7.1": {
-      "sha512": "luXLxUo/QYA6WJyxV8UhqGdxYlRt8NCz5e1fZtP8H+IH+CYgvf/z35HVochvCI7FxmixcGU5F+grI9OIzNxhlA==",
+    "SunamoCollections/24.1.10.1": {
+      "sha512": "EnNRxIvpjdz1pUDl7Snq8iFSRDzJ87pE7vDdN3SNEsmHB/ciUn2OAm4+XAvwK6NYaGluSBwW9aeMdx+sbDjqDw==",
       "type": "package",
-      "path": "sunamocollections/24.1.7.1",
+      "path": "sunamocollections/24.1.10.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/net8.0/SunamoCollections.dll",
-        "sunamocollections.24.1.7.1.nupkg.sha512",
+        "sunamocollections.24.1.10.1.nupkg.sha512",
         "sunamocollections.nuspec"
       ]
     },
-    "SunamoCollectionsChangeContent/24.1.5.3": {
-      "sha512": "WqwC53bWxXjVHvHaCIRUU/PTPMFc0UdrisQppseKtkHh1aeiOwIf5HDpt2RiaQG4U+1JMvHgfBZ5MaP7qW80aA==",
+    "SunamoCollectionsChangeContent/24.1.7.1": {
+      "sha512": "2UNogBJ4qOLxo7+csqWZphQrjBts8D+dT1wWnCu4zMhVCUsL29J2s1/OvWWODxJ64jLCwhcsMMEM+DFdV4mP4g==",
       "type": "package",
-      "path": "sunamocollectionschangecontent/24.1.5.3",
+      "path": "sunamocollectionschangecontent/24.1.7.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/net8.0/SunamoCollectionsChangeContent.dll",
-        "sunamocollectionschangecontent.24.1.5.3.nupkg.sha512",
+        "sunamocollectionschangecontent.24.1.7.1.nupkg.sha512",
         "sunamocollectionschangecontent.nuspec"
       ]
     },
@@ -1097,15 +1126,15 @@
         "sunamocollectionwithoutduplicates.nuspec"
       ]
     },
-    "SunamoColors/23.12.19.1": {
-      "sha512": "4u586+q9Hp1QZxoYr50aM6yRnWGI5dx9aCST1oQwo+fYn5Tr4uV33jaT2GmpuxiYo14lNQwC4An6NIz+8yWW3A==",
+    "SunamoColors/24.1.7.1": {
+      "sha512": "NVDP8nV7N61SppH0GIMNTy4qTwPOfZELKRVN/s97H5cr+I0/YT/G/HFNgNrVMu9+JvZqgdqa3E7//677b1ZTOw==",
       "type": "package",
-      "path": "sunamocolors/23.12.19.1",
+      "path": "sunamocolors/24.1.7.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/net8.0/SunamoColors.dll",
-        "sunamocolors.23.12.19.1.nupkg.sha512",
+        "sunamocolors.24.1.7.1.nupkg.sha512",
         "sunamocolors.nuspec"
       ]
     },
@@ -1121,51 +1150,51 @@
         "sunamodata.nuspec"
       ]
     },
-    "SunamoDebugCollection/24.1.4.1": {
-      "sha512": "S8k/n0Z9cRpGw9vPJ5mcN0LXIT7J2nT4dvD3L7XJt4wjMYXGTJFBxFw417wYIc33gQOsMnJ3W0ikvz/gdohjZA==",
+    "SunamoDebugCollection/24.1.5.1": {
+      "sha512": "BabfCTQT7Od/EzIEqG0o24YWbBGOHW207RPcGrIWcq1few3O7mmh2cZ3IpIq05nUFuMAJQ+wa2jte7ICgLNX7A==",
       "type": "package",
-      "path": "sunamodebugcollection/24.1.4.1",
+      "path": "sunamodebugcollection/24.1.5.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/net8.0/SunamoDebugCollection.dll",
-        "sunamodebugcollection.24.1.4.1.nupkg.sha512",
+        "sunamodebugcollection.24.1.5.1.nupkg.sha512",
         "sunamodebugcollection.nuspec"
       ]
     },
-    "SunamoDelegates/24.1.4.1": {
-      "sha512": "kFLVd9m11br6H9B2AKMMh1iYtWNejuKYcE+LYQ6UCvVNXO5k81eEVyDpXD7kJE+ZF4AnhH0AcfznZHNJpl8b1Q==",
+    "SunamoDelegates/24.1.5.1": {
+      "sha512": "QNcP/En6FQ6tRwdF1jWLQPT3RfjQHOPe96/ZOTkSpP7/gHYW8QiJ7dwLWwGKq1pPWLAbCnHPSL3UMBF9pO23MQ==",
       "type": "package",
-      "path": "sunamodelegates/24.1.4.1",
+      "path": "sunamodelegates/24.1.5.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/net8.0/SunamoDelegates.dll",
-        "sunamodelegates.24.1.4.1.nupkg.sha512",
+        "sunamodelegates.24.1.5.1.nupkg.sha512",
         "sunamodelegates.nuspec"
       ]
     },
-    "SunamoDictionary/24.1.4.1": {
-      "sha512": "FIbvuszj1Ndzkonsz94im4dmge4yjRHwcQTc4/SpsiyuoL+kXcPaKdPKfYt30QYl9AayS+X4PtbLnPlVqpRS0A==",
+    "SunamoDictionary/24.1.7.1": {
+      "sha512": "dxR87tdTJ9LUT8g2xsWG/zQDMBF3I8mQ+Tf/1UvXdlCg8A5/sTdldd2CeeURUpjC+TZvi1I19pbxXxSa8O408Q==",
       "type": "package",
-      "path": "sunamodictionary/24.1.4.1",
+      "path": "sunamodictionary/24.1.7.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/net8.0/SunamoDictionary.dll",
-        "sunamodictionary.24.1.4.1.nupkg.sha512",
+        "sunamodictionary.24.1.7.1.nupkg.sha512",
         "sunamodictionary.nuspec"
       ]
     },
-    "SunamoEnums/24.1.7.1": {
-      "sha512": "i8t47QUUZ+duLCDXJsV7szeJTMI/2iVZ2yn+YjcQmJMtsAu4vFhvThmzhENqKlYCfb03PYEZQGRU+bM3kGVjqQ==",
+    "SunamoEnums/24.1.7.2": {
+      "sha512": "1Y1W/3vMBFWATd69/UHfl1qXSMAUSfkVLSwcsuhiY/ZWUdslIg688ZvN/oBFQxozJAozUQWnK/RupWmMw1GO+g==",
       "type": "package",
-      "path": "sunamoenums/24.1.7.1",
+      "path": "sunamoenums/24.1.7.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/net8.0/SunamoEnums.dll",
-        "sunamoenums.24.1.7.1.nupkg.sha512",
+        "sunamoenums.24.1.7.2.nupkg.sha512",
         "sunamoenums.nuspec"
       ]
     },
@@ -1193,15 +1222,15 @@
         "sunamoextensions.nuspec"
       ]
     },
-    "SunamoFileExtensions/24.1.1.1": {
-      "sha512": "zFbiup/l4eeTPLu27yw2Dh7lROpWVJ9J9wQnxJyT0jm6kJbeCyi8CRjRW8eE99ZGhEx1Mx+a1+vROQj9AAkv9A==",
+    "SunamoFileExtensions/24.1.7.1": {
+      "sha512": "GKvJCBuvQZoVLr5WOXesOa0UttuhbFL8AGOBAfGeez4n/DqvR6YOkAJ+tMRFVy97t/vmVKzygpkvy+m/uzG73g==",
       "type": "package",
-      "path": "sunamofileextensions/24.1.1.1",
+      "path": "sunamofileextensions/24.1.7.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/net8.0/SunamoFileExtensions.dll",
-        "sunamofileextensions.24.1.1.1.nupkg.sha512",
+        "sunamofileextensions.24.1.7.1.nupkg.sha512",
         "sunamofileextensions.nuspec"
       ]
     },
@@ -1217,51 +1246,51 @@
         "sunamofileio.nuspec"
       ]
     },
-    "SunamoI18N/24.1.4.1": {
-      "sha512": "RMJpHlTcchz0+5k5guhxD3G2vntBe9AeeULviNC9AQC4z+dYVIUPDz4t3yX+zgkXRNKd7wZAP177dyoPCkiPQA==",
+    "SunamoI18N/24.1.9.1": {
+      "sha512": "5aZraCljIRc946dyO5f76rsNsu7E81Po8oCukVSsKP6//OJBUG8kNCnLMrbgEc0sBmVLyOcmnstaQbmXzAoxyQ==",
       "type": "package",
-      "path": "sunamoi18n/24.1.4.1",
+      "path": "sunamoi18n/24.1.9.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/net8.0/SunamoI18N.dll",
-        "sunamoi18n.24.1.4.1.nupkg.sha512",
+        "sunamoi18n.24.1.9.1.nupkg.sha512",
         "sunamoi18n.nuspec"
       ]
     },
-    "SunamoInterfaces/24.1.5.1": {
-      "sha512": "u7v+C1cr/DvQns0miN/nsfefRw37jwvc3RGV+xMxSExmn+bUqftuFAGjhDk38EvFdxooUyrisWLklY8QYfdljA==",
+    "SunamoInterfaces/24.1.7.1": {
+      "sha512": "FKeGl4YMY/4adl/luusmwUyJt80wX44bHYnYCjFdtOZ7fOlG57IGH8McuGrvhgLn+48YLSGTR8wFzNQg/2fMQA==",
       "type": "package",
-      "path": "sunamointerfaces/24.1.5.1",
+      "path": "sunamointerfaces/24.1.7.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/net8.0/SunamoInterfaces.dll",
-        "sunamointerfaces.24.1.5.1.nupkg.sha512",
+        "sunamointerfaces.24.1.7.1.nupkg.sha512",
         "sunamointerfaces.nuspec"
       ]
     },
-    "SunamoLang/24.1.4.1": {
-      "sha512": "Iog5BO7jR2tAbPAW575itEjIVw/MkCwu+Jv+7uv8AMQudN9kL++XkYT6OKCIS92ZSTpm+YYg87gEfhAPtHdHpg==",
+    "SunamoLang/24.1.9.1": {
+      "sha512": "c09BJRYc7ectS2BRgB8gbtGEyIgi8INsQOf5laedBCylaprVO5BQpcWs74Cr+anBttLZlSRzZ8Ty8LyGfx2xUw==",
       "type": "package",
-      "path": "sunamolang/24.1.4.1",
+      "path": "sunamolang/24.1.9.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/net8.0/SunamoLang.dll",
-        "sunamolang.24.1.4.1.nupkg.sha512",
+        "sunamolang.24.1.9.1.nupkg.sha512",
         "sunamolang.nuspec"
       ]
     },
-    "SunamoPercentCalculator/24.1.5.1": {
-      "sha512": "iHXBy03s8+gULWZq/gvpyIEj1K//30DP/cIxN6kewZ+c5s0olwEo0QcJmuOjvhxsZd8nUFteouWWJTzoGj55Rw==",
+    "SunamoPercentCalculator/24.1.7.1": {
+      "sha512": "m/bdBgrLLzdDQtePVAIoLHp9vkxnBKYZkhe/x74P8g+jzkoWmT6XKtGekMxeAvkv6tsFKR5bwhuuLZX0sm5vxA==",
       "type": "package",
-      "path": "sunamopercentcalculator/24.1.5.1",
+      "path": "sunamopercentcalculator/24.1.7.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/net8.0/SunamoPercentCalculator.dll",
-        "sunamopercentcalculator.24.1.5.1.nupkg.sha512",
+        "sunamopercentcalculator.24.1.7.1.nupkg.sha512",
         "sunamopercentcalculator.nuspec"
       ]
     },
@@ -1289,27 +1318,27 @@
         "sunamoregex.nuspec"
       ]
     },
-    "SunamoStringData/24.1.5.3": {
-      "sha512": "/iJSZx15Oc2/wgiQdBqPiy9Ewo2n6Kx8d74IBOpL8jBmh+Sn7vpv1jaekiP4VNCgTlBl52SVLFxsrrGGbUuaHg==",
+    "SunamoStringData/24.1.5.4": {
+      "sha512": "ZCUtexuJKw6a4wPOu9fMPF/r95cUeYz1v1GgtBctHQ6MzT5D9BjUig9P+5Zt4UvBAOFAgf2TE5ht07p+7w5f6g==",
       "type": "package",
-      "path": "sunamostringdata/24.1.5.3",
+      "path": "sunamostringdata/24.1.5.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/net8.0/SunamoStringData.dll",
-        "sunamostringdata.24.1.5.3.nupkg.sha512",
+        "sunamostringdata.24.1.5.4.nupkg.sha512",
         "sunamostringdata.nuspec"
       ]
     },
-    "SunamoStringGetLines/24.1.5.1": {
-      "sha512": "UmvTCqGLGq1lYjAnnpsg0YK19jwl6ekkPDGpkLx0MgaiduaLAaFzodB0aFK43jrgCZPfsRhQjIokMOX8NU70vA==",
+    "SunamoStringGetLines/24.1.7.1": {
+      "sha512": "AzLcg7qrkzblJtBr5WXxcV2k2Ed9ljMsKSqSvtsIs60SY9pUxRdFupWxAI6L2cTf+HHsy75EEUWNFcG7/gDY9Q==",
       "type": "package",
-      "path": "sunamostringgetlines/24.1.5.1",
+      "path": "sunamostringgetlines/24.1.7.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/net8.0/SunamoStringGetLines.dll",
-        "sunamostringgetlines.24.1.5.1.nupkg.sha512",
+        "sunamostringgetlines.24.1.7.1.nupkg.sha512",
         "sunamostringgetlines.nuspec"
       ]
     },
@@ -1337,63 +1366,87 @@
         "sunamostringsplit.nuspec"
       ]
     },
-    "SunamoTextBuilder/24.1.4.1": {
-      "sha512": "bs6wSqPSqDvXyCFNNQCLxj/IHgxJussR5HfIeJWH73BWquUYX302ApdvnvaZPwsKri3g+w8vOcqDak3ABKjjnA==",
+    "SunamoStringSubstring/24.1.7.1": {
+      "sha512": "3YU6As+zMWjm2sReV+Ilw3KWHdvdYMxAFf2sTU8gawtuH7sKJmuq4Elzx8l/TwLUF3bb7NJ3sLJKQtNgYYwwjw==",
       "type": "package",
-      "path": "sunamotextbuilder/24.1.4.1",
+      "path": "sunamostringsubstring/24.1.7.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net8.0/SunamoStringSubstring.dll",
+        "sunamostringsubstring.24.1.7.1.nupkg.sha512",
+        "sunamostringsubstring.nuspec"
+      ]
+    },
+    "SunamoStringTrim/24.1.7.1": {
+      "sha512": "mEybViIAeHRbZdgzowZLRigrasr242eG/dPj7qzcDqhLNq2OE/ImumBu7FhqJaR++5bmfaq810nMUy6ZXKN6kQ==",
+      "type": "package",
+      "path": "sunamostringtrim/24.1.7.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net8.0/SunamoStringTrim.dll",
+        "sunamostringtrim.24.1.7.1.nupkg.sha512",
+        "sunamostringtrim.nuspec"
+      ]
+    },
+    "SunamoTextBuilder/24.1.5.1": {
+      "sha512": "nSF6KMu4ARZ6sUcoduzTOOxA/jw+MDeMf2xLFayYAvTSWwSvG4BNPrqRX8110581n3dCnjMjJPm8ggY1NLD9Jw==",
+      "type": "package",
+      "path": "sunamotextbuilder/24.1.5.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/net8.0/SunamoTextBuilder.dll",
-        "sunamotextbuilder.24.1.4.1.nupkg.sha512",
+        "sunamotextbuilder.24.1.5.1.nupkg.sha512",
         "sunamotextbuilder.nuspec"
       ]
     },
-    "SunamoTextBuilderShared/24.1.4.1": {
-      "sha512": "7grfcSSO3/ykWNE9cRQKZLW0wVjw0s+e/3Ngx1WNFpkUPNE4y85ws8DQKa1tqqApsswxbf1tHic07WdiGlim4A==",
+    "SunamoTextBuilderShared/24.1.5.1": {
+      "sha512": "I4axPnF3txYYYo1+hwJ0TG3QEGbGLF/hrJsX3BxcxsQPqv8gopS2yQz6/VO2xxpBtb3lAR5mrEtTk84Qxav1jA==",
       "type": "package",
-      "path": "sunamotextbuildershared/24.1.4.1",
+      "path": "sunamotextbuildershared/24.1.5.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/net8.0/SunamoTextBuilderShared.dll",
-        "sunamotextbuildershared.24.1.4.1.nupkg.sha512",
+        "sunamotextbuildershared.24.1.5.1.nupkg.sha512",
         "sunamotextbuildershared.nuspec"
       ]
     },
-    "SunamoTextOutputGenerator/24.1.5.1": {
-      "sha512": "sRZIKHj6Kee2U3v6JlYvb8/yE9SVQt1pFxSZ9VetROkFkUGHCNRm9w4c/0bimltUHERxJs/nTukIfkyzo74ueQ==",
+    "SunamoTextOutputGenerator/24.1.7.1": {
+      "sha512": "a8VkLUicGWQePAQbVuxy/gz0NZmwSXQUhIkEjh8PzLD2eBEm8c4BMRBx3yV0ymBaTLLXC/TB5hdoSmHBixdR6w==",
       "type": "package",
-      "path": "sunamotextoutputgenerator/24.1.5.1",
+      "path": "sunamotextoutputgenerator/24.1.7.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/net8.0/SunamoTextOutputGenerator.dll",
-        "sunamotextoutputgenerator.24.1.5.1.nupkg.sha512",
+        "sunamotextoutputgenerator.24.1.7.1.nupkg.sha512",
         "sunamotextoutputgenerator.nuspec"
       ]
     },
-    "SunamoTextOutputGeneratorShared/24.1.4.1": {
-      "sha512": "rhxvqQPg2w15KCXjyHf1TbzFI9opK9hlgC38QEZOWmqGXjLx851dZtdsqI/4wTuqxrMcN72BI+KDBhaPe5PrOw==",
+    "SunamoTextOutputGeneratorShared/24.1.5.1": {
+      "sha512": "e3WvttbvYWhj97aADiCmJAzoJ8t2O9Y2ZAN7SUj4yKj0IDUyAjbAiOKpV/T4wYuMnhOlEdz/TnvUtALhRH1RRQ==",
       "type": "package",
-      "path": "sunamotextoutputgeneratorshared/24.1.4.1",
+      "path": "sunamotextoutputgeneratorshared/24.1.5.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/net8.0/SunamoTextOutputGeneratorShared.dll",
-        "sunamotextoutputgeneratorshared.24.1.4.1.nupkg.sha512",
+        "sunamotextoutputgeneratorshared.24.1.5.1.nupkg.sha512",
         "sunamotextoutputgeneratorshared.nuspec"
       ]
     },
-    "SunamoThisApp/24.1.5.3": {
-      "sha512": "Kti4xysR+h6V7Fa4/A7ksj+ur9ENiXcOykKcGtjEEVeLYGCQzbYhxpHvnglR6OfxU1RKNizHB6pieqaUNsYgzw==",
+    "SunamoThisApp/24.1.5.4": {
+      "sha512": "1I0G0WVFlvy/hasuUMUJrMbj69znDgV9c8r9IONeTVK1ANnSIXFjhd7MqePseGtCujSz+UHzvgpKuxzh8mk+zA==",
       "type": "package",
-      "path": "sunamothisapp/24.1.5.3",
+      "path": "sunamothisapp/24.1.5.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/net8.0/SunamoThisApp.dll",
-        "sunamothisapp.24.1.5.3.nupkg.sha512",
+        "sunamothisapp.24.1.5.4.nupkg.sha512",
         "sunamothisapp.nuspec"
       ]
     },
@@ -1409,15 +1462,15 @@
         "sunamothread.nuspec"
       ]
     },
-    "SunamoTwoWayDictionary/23.12.19.1": {
-      "sha512": "8BXsZ2dNK5EsJpaYlH9c33FAZkV5G9GOFCk4BwGcjGGtFuiOtg3cNKAWY8ykt2O1g8yp/mv52UVaF9mko/Pf9w==",
+    "SunamoTwoWayDictionary/24.1.7.1": {
+      "sha512": "8eyOHWPpG0tgJhTkYl3D6uVQ8twVf0u5vVoWkH1OQOtQz9N4eayPctnaboKwmZ+tbwhj1er5DQlCsHm2w3kCHQ==",
       "type": "package",
-      "path": "sunamotwowaydictionary/23.12.19.1",
+      "path": "sunamotwowaydictionary/24.1.7.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/net8.0/SunamoTwoWayDictionary.dll",
-        "sunamotwowaydictionary.23.12.19.1.nupkg.sha512",
+        "sunamotwowaydictionary.24.1.7.1.nupkg.sha512",
         "sunamotwowaydictionary.nuspec"
       ]
     },
@@ -1445,39 +1498,39 @@
         "sunamounderscore.nuspec"
       ]
     },
-    "SunamoUri/24.1.5.1": {
-      "sha512": "EaH2QM24L5cwUuL6Thxpn/ideN61EZIowq8kz8svbta6fnDC+oKeDty4961XuHEXITSszJwsaZNtAQYIXq5tgg==",
+    "SunamoUri/24.1.10.1": {
+      "sha512": "tKsxniBxPxuEbH5n2t+XYP4GnXiU8cxpM10q2hO1E9kI3OzZuwHqBqy/GsyA0LwI35Ka8Wx4g2UJ5NTi3NQuaA==",
       "type": "package",
-      "path": "sunamouri/24.1.5.1",
+      "path": "sunamouri/24.1.10.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/net8.0/SunamoUri.dll",
-        "sunamouri.24.1.5.1.nupkg.sha512",
+        "sunamouri.24.1.10.1.nupkg.sha512",
         "sunamouri.nuspec"
       ]
     },
-    "SunamoValues/24.1.4.1": {
-      "sha512": "xEaCRnEw3jrBuPjSHdb5LbFV4h+JdiDWGbj1jSWmM0HPybC0HY8n3S9uM4139qhV/H7dT7UIKIyDekFLXydZyg==",
+    "SunamoValues/24.1.9.2": {
+      "sha512": "q2EX0mFs3pOVU/ojIGgw6G4iiEbVtYFaGXvwpoQPjX65We2/Y+u1XmUXqhz0CjV/Zj0IDOXDvnVQdg6qhB/wrw==",
       "type": "package",
-      "path": "sunamovalues/24.1.4.1",
+      "path": "sunamovalues/24.1.9.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/net8.0/SunamoValues.dll",
-        "sunamovalues.24.1.4.1.nupkg.sha512",
+        "sunamovalues.24.1.9.2.nupkg.sha512",
         "sunamovalues.nuspec"
       ]
     },
-    "SunamoXlf/24.1.5.1": {
-      "sha512": "aK+Pa/QwjFz7jtFPRO7zE7OM+veNa5wXvJAqFc7//QActggb7D+KIMQfGGU72JinWSnXlqHa9iNstkiZWT9oIA==",
+    "SunamoXlf/24.1.7.4": {
+      "sha512": "rsXu/RzqLV5vZlTJ2EELw/LZbmirh2Vdr/yHQ8rQWextceppy/bSmcaey+GFr2HcGEYVhYlMuTMYOklJhXRYfg==",
       "type": "package",
-      "path": "sunamoxlf/24.1.5.1",
+      "path": "sunamoxlf/24.1.7.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/net8.0/SunamoXlf.dll",
-        "sunamoxlf.24.1.5.1.nupkg.sha512",
+        "sunamoxlf.24.1.7.4.nupkg.sha512",
         "sunamoxlf.nuspec"
       ]
     },
@@ -1648,17 +1701,17 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "Google.Apis.YouTube.v3 >= 1.64.0.3205",
+      "Google.Apis.YouTube.v3 >= 1.65.0.3205",
       "Microsoft.CSharp >= 4.7.0",
-      "SunamoCollections >= 24.1.7.1",
-      "SunamoUri >= 24.1.5.1"
+      "SunamoCollections >= 24.1.10.1",
+      "SunamoUri >= 24.1.10.1"
     ]
   },
   "packageFolders": {
     "C:\\Users\\r\\.nuget\\packages\\": {}
   },
   "project": {
-    "version": "24.1.7.1",
+    "version": "24.1.10.1",
     "restore": {
       "projectUniqueName": "E:\\vs\\Projects\\sunamoWithoutLocalDep\\SunamoYouTube\\SunamoYouTube.csproj",
       "projectName": "SunamoYouTube",
@@ -1667,7 +1720,6 @@
       "outputPath": "E:\\vs\\Projects\\sunamoWithoutLocalDep\\SunamoYouTube\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "E:\\vs\\Projects\\sunamoWithoutLocalDep\\.nuget\\NuGet.Config",
         "C:\\Users\\r\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -1696,7 +1748,7 @@
         "dependencies": {
           "Google.Apis.YouTube.v3": {
             "target": "Package",
-            "version": "[1.64.0.3205, )"
+            "version": "[1.65.0.3205, )"
           },
           "Microsoft.CSharp": {
             "target": "Package",
@@ -1704,11 +1756,11 @@
           },
           "SunamoCollections": {
             "target": "Package",
-            "version": "[24.1.7.1, )"
+            "version": "[24.1.10.1, )"
           },
           "SunamoUri": {
             "target": "Package",
-            "version": "[24.1.5.1, )"
+            "version": "[24.1.10.1, )"
           }
         },
         "imports": [
@@ -1727,7 +1779,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

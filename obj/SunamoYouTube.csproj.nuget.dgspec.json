@@ -5,7 +5,7 @@
   },
   "projects": {
     "E:\\vs\\Projects\\sunamoWithoutLocalDep\\SunamoYouTube\\SunamoYouTube.csproj": {
-      "version": "24.1.7.1",
+      "version": "24.1.10.1",
       "restore": {
         "projectUniqueName": "E:\\vs\\Projects\\sunamoWithoutLocalDep\\SunamoYouTube\\SunamoYouTube.csproj",
         "projectName": "SunamoYouTube",
@@ -14,7 +14,6 @@
         "outputPath": "E:\\vs\\Projects\\sunamoWithoutLocalDep\\SunamoYouTube\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "E:\\vs\\Projects\\sunamoWithoutLocalDep\\.nuget\\NuGet.Config",
           "C:\\Users\\r\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -43,7 +42,7 @@
           "dependencies": {
             "Google.Apis.YouTube.v3": {
               "target": "Package",
-              "version": "[1.64.0.3205, )"
+              "version": "[1.65.0.3205, )"
             },
             "Microsoft.CSharp": {
               "target": "Package",
@@ -51,11 +50,11 @@
             },
             "SunamoCollections": {
               "target": "Package",
-              "version": "[24.1.7.1, )"
+              "version": "[24.1.10.1, )"
             },
             "SunamoUri": {
               "target": "Package",
-              "version": "[24.1.5.1, )"
+              "version": "[24.1.10.1, )"
             }
           },
           "imports": [
@@ -74,7 +73,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
