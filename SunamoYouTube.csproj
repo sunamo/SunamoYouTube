@@ -3,14 +3,14 @@
     <TargetFramework>net8.0</TargetFramework>
     <OutputType>Library</OutputType>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-    <Version>24.1.24.1</Version>
+    <Version>24.2.1.2</Version>
     <Description>Working with YouTube</Description>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Google.Apis.YouTube.v3" Version="1.66.0.3309" />
     <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
-    <PackageReference Include="SunamoCollections" Version="24.1.24.1" />
-    <PackageReference Include="SunamoUri" Version="24.1.14.1" />
+    <PackageReference Include="SunamoCollections" Version="24.2.1.1" />
+    <PackageReference Include="SunamoUri" Version="24.2.1.1" />
   </ItemGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DefineConstants>$(DefineConstants);ASYNC</DefineConstants>
