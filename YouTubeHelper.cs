@@ -1,3 +1,6 @@
+using SunamoYouTube._sunamo;
+using System.Linq;
+
 namespace SunamoYouTube;
 
 /// <summary>
@@ -34,7 +37,9 @@ public static class YouTubeHelper
     /// <param name="ytCodes"></param>
     public static async Task CreateNewPlaylist(string ytSecret, string name, List<string> ytCodes)
     {
-        CA.RemoveStringsEmpty(ytCodes);
+        //CA.RemoveStringsEmpty(ytCodes);
+
+        ytCodes = ytCodes.Where(d => !string.IsNullOrEmpty(d)).ToList();
 
         // Neustale mi to vytvari playlisty na puvodnim sunamocz@gmail.com, i prtesto ze json je stazeny se smutekutek
         #region MyRegion
