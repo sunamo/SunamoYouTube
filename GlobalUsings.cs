@@ -9,3 +9,8 @@ global using Google.Apis.Services;
 global using Google.Apis.Util.Store;
 global using Google.Apis.YouTube.v3.Data;
 global using Google.Apis.YouTube.v3;
+global using System.Text;
+global using System.Collections.Generic;
+global using System.Collections;
+global using System.Linq;
+
