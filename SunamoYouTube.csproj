@@ -20,6 +20,11 @@
     <Compile Include="..\SunamoExceptions\OnlyInSE\Exc.cs" Link="_linked\SunamoExceptions\OnlyInSE\Exc.cs" />
     <Compile Include="..\SunamoExceptions\OnlyInSE\Types.cs" Link="_linked\SunamoExceptions\OnlyInSE\Types.cs" />
     <Compile Include="..\SunamoXlfKeys\XlfKeys.cs" Link="_linked\SunamoXlfKeys\XlfKeys.cs" />
+    <Compile Include="..\SunamoShared\Web\YouTube.cs" Link="_linked\SunamoShared\Web\YouTube.cs" />
+    <Compile Include="..\SunamoRegex\RegexHelper.cs" Link="_linked\SunamoRegex\RegexHelper.cs" />
+    <Compile Include="..\SunamoUri\QSHelper.cs" Link="_linked\SunamoUri\QSHelper.cs" />
+    <Compile Include="..\SunamoFubuCsProjFile\_NotMine\None.cs" Link="_linked\SunamoFubuCsProjFile\_NotMine\None.cs" />
+    <Compile Include="..\SunamoFubuCore\Descriptions\Description.cs" Link="_linked\SunamoFubuCore\Descriptions\Description.cs" />
   </ItemGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DefineConstants>$(DefineConstants);ASYNC;SunamoYouTube</DefineConstants>
