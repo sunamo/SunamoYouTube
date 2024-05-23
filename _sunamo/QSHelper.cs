@@ -1,9 +1,9 @@
 
 
 namespace SunamoYouTube;
-internal class QSHelper
+public class QSHelper
 {
-    internal static string GetParameter(string uri, string nameParam)
+    public static string GetParameter(string uri, string nameParam)
     {
         var main = uri.Split(new string[] { AllStrings.q, "&" }, StringSplitOptions.RemoveEmptyEntries);
         foreach (string var in main)
