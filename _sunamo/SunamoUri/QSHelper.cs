@@ -1,5 +1,3 @@
-
-
 namespace SunamoYouTube._sunamo.SunamoUri;
 internal class QSHelper
 {

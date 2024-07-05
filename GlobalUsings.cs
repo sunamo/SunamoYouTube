@@ -22,3 +22,6 @@ global using SunamoYouTube._sunamo.SunamoValues;
 global using SunamoYouTube._sunamo.SunamoXlfKeys;
 global using SunamoYouTube._sunamo.SunamoExceptions.OnlyInSE;
 global using SunamoYouTube._sunamo.SunamoExceptions._AddedToAllCsproj;
+global using System.Diagnostics;
+global using System.Net;
+global using System.Text.RegularExpressions;
