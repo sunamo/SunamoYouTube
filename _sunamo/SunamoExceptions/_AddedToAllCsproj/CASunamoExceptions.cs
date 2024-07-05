@@ -1,4 +1,4 @@
-namespace SunamoYouTube;
+namespace SunamoYouTube._sunamo.SunamoExceptions._AddedToAllCsproj;
 
 
 internal class CASunamoExceptions

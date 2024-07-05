@@ -1,4 +1,4 @@
-namespace SunamoYouTube;
+namespace SunamoYouTube._sunamo.SunamoExceptions.OnlyInSE;
 
 using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;

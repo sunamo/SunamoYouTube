@@ -1,4 +1,4 @@
-namespace SunamoYouTube;
+namespace SunamoYouTube._sunamo.SunamoValues;
 
 
 internal class AllChars

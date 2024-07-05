@@ -1,6 +1,6 @@
 
 
-namespace SunamoYouTube;
+namespace SunamoYouTube._sunamo.SunamoUri;
 internal class QSHelper
 {
     internal static string GetParameter(string uri, string nameParam)

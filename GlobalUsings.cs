@@ -3,7 +3,6 @@ global using System;
 global using System.IO;
 global using System.Threading.Tasks;
 global using System.Threading;
-
 global using Google.Apis.Auth.OAuth2;
 global using Google.Apis.Services;
 global using Google.Apis.Util.Store;
@@ -13,6 +12,13 @@ global using System.Text;
 global using System.Collections.Generic;
 global using System.Collections;
 global using System.Linq;
-
 global using System.Diagnostics.CodeAnalysis;
 global using System.Reflection;
+global using SunamoYouTube;
+global using SunamoYouTube._sunamo.SunamoRegex;
+global using SunamoYouTube._sunamo.SunamoStringGetLines;
+global using SunamoYouTube._sunamo.SunamoUri;
+global using SunamoYouTube._sunamo.SunamoValues;
+global using SunamoYouTube._sunamo.SunamoXlfKeys;
+global using SunamoYouTube._sunamo.SunamoExceptions.OnlyInSE;
+global using SunamoYouTube._sunamo.SunamoExceptions._AddedToAllCsproj;

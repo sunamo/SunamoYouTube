@@ -1,4 +1,4 @@
-namespace SunamoYouTube;
+namespace SunamoYouTube._sunamo.SunamoExceptions._AddedToAllCsproj;
 
 using System;
 using System.Collections.Generic;
