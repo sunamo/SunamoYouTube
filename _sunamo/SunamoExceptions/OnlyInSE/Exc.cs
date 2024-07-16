@@ -1,6 +1,5 @@
 namespace SunamoYouTube._sunamo.SunamoExceptions.OnlyInSE;
 
-
 //namespace SunamoExceptions
 //{
 /// <summary>
@@ -76,7 +75,7 @@ internal class Exc
         var s2 = l.Split("at ")[1].Trim();
         var s = s2.Split("(")[0];
         // zakomentováno, v SE nechci mít žádné duplicitní metody
-        //s = SHSE.RemoveAfterFirst(s, AllChars.lb);
+        //s = .RemoveAfterFirst(s, AllChars.lb);
         var p = s.Split(new char[] { AllChars.dot }, StringSplitOptions.RemoveEmptyEntries).ToList();
         methodName = p[p.Count - 1];
         p.RemoveAt(p.Count - 1);

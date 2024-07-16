@@ -1,6 +1,5 @@
 namespace SunamoYouTube._sunamo.SunamoRegex;
 
-
 /// <summary>
 /// Most NotTranslateAble class due to many regex and duplicated \
 /// </summary>

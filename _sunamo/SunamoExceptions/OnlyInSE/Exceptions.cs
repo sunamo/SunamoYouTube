@@ -1,6 +1,5 @@
 namespace SunamoYouTube._sunamo.SunamoExceptions.OnlyInSE;
 
-
 internal class Exceptions
 {
     internal static string UseRlc(string before)
@@ -300,7 +299,7 @@ internal class Exceptions
     #endregion
     #region From easy copy from ExceptionsShared64.cs - all ok 16-10-21
     /// <summary>
-    ///     Start with ConstsSE.Exception to identify occur
+    ///     Start with Consts.Exception to identify occur
     /// </summary>
     /// <param name="ex"></param>
     /// <param name="alsoInner"></param>
@@ -440,7 +439,7 @@ internal class Exceptions
     }
     internal static string DumpAsString(object s)
     {
-        return null; //RHSE.DumpAsXml(s);
+        return null; //RH.DumpAsXml(s);
     }
     internal static string InvalidCast(string before, string message)
     {

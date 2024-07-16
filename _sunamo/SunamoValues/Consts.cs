@@ -1,8 +1,7 @@
 namespace SunamoYouTube._sunamo.SunamoValues;
 
-
 /// <summary>
-///     Jelikož se jedná jen o tvrdé řetězce a jde mi o to furt jen nepřesouvat kód, už navždy to vše bude v SE.
+///     Jelikož se jedná jen o tvrdé řetězce a jde mi o to furt jen nepřesouvat kód, už navždy to vše bude v .
 /// </summary>
 internal class Consts
 {

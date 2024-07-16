@@ -1,6 +1,5 @@
 namespace SunamoYouTube._sunamo.SunamoExceptions.OnlyInSE;
 
-
 internal class ThrowEx
 {
     #region from ThrowExShared.cs - all ok 17-10-21
@@ -322,7 +321,7 @@ PD.ShowMb(s);
                 return false;
             if (lastMethod == null)
             {
-                //                string lastMethodIsConstsNulled = "lastMethod = " + ConstsSE.nulled;
+                //                string lastMethodIsConstsNulled = "lastMethod = " + Consts.nulled;
                 //#if MB
                 //                    ShowMb(lastMethodIsConstsNulled);
                 //#endif
