@@ -1,4 +1,4 @@
-//namespace SunamoYouTube._sunamo.SunamoExceptions._AddedToAllCsproj;
+namespace SunamoYouTube._sunamo;
 
 internal class SH
 {
