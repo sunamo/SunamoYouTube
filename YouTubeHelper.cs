@@ -1,34 +1,31 @@
 namespace SunamoYouTube;
 
 /// <summary>
-/// YouTube Data API v3 sample: create a playlist.
-/// Relies on the Google APIs Client Library for .NET, v1.7.0 or higher.
-/// See https://developers.google.com/api-client-library/dotnet/get_started
+///     YouTube Data API v3 sample: create a playlist.
+///     Relies on the Google APIs Client Library for .NET, v1.7.0 or higher.
+///     See https://developers.google.com/api-client-library/dotnet/get_started
 /// </summary>
 public static class YouTubeHelper
 {
-    private static Type type = typeof(YouTubeHelper);
+    private static readonly Type type = typeof(YouTubeHelper);
 
     /// <summary>
-    /// Direct edit
+    ///     Direct edit
     /// </summary>
     /// <param name="l"></param>
     public static List<string> GetYtCodesFromUri(List<string> l)
     {
-        for (int i = 0; i < l.Count; i++)
+        for (var i = 0; i < l.Count; i++)
         {
             var s = l[i];
-            if (RegexHelper.IsUri(s))
-            {
-                l[i] = QSHelper.GetParameter(s, "v");
-            }
+            if (RegexHelper.IsUri(s)) l[i] = QSHelper.GetParameter(s, "v");
         }
 
         return l;
     }
 
     /// <summary>
-    /// A1 = YouTubeConsts.secret
+    ///     A1 = YouTubeConsts.secret
     /// </summary>
     /// <param name="name"></param>
     /// <param name="ytCodes"></param>
@@ -39,7 +36,9 @@ public static class YouTubeHelper
         ytCodes = ytCodes.Where(d => !string.IsNullOrEmpty(d)).ToList();
 
         // Neustale mi to vytvari playlisty na puvodnim sunamocz@gmail.com, i prtesto ze json je stazeny se smutekutek
+
         #region MyRegion
+
         UserCredential credential;
         using (var stream = new FileStream(ytSecret, FileMode.Open, FileAccess.Read))
         {
@@ -54,11 +53,12 @@ public static class YouTubeHelper
             );
         }
 
-        var youtubeService = new YouTubeService(new BaseClientService.Initializer()
+        var youtubeService = new YouTubeService(new BaseClientService.Initializer
         {
             HttpClientInitializer = credential,
             ApplicationName = type.ToString()
         });
+
         #endregion
 
         //bacha, klidne vytvori dalsi playlist se stejnym jmenem
