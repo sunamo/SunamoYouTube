@@ -18,3 +18,4 @@ global using System.Diagnostics;
 global using System.Text.RegularExpressions;
 global using System.Reflection;
 global using System.Net;
+global using System.Diagnostics.CodeAnalysis;
