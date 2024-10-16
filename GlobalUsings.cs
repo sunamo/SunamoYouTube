@@ -13,7 +13,7 @@ global using System.Collections;
 global using System.Linq;
 global using SunamoYouTube._sunamo.SunamoRegex;
 global using SunamoYouTube._sunamo.SunamoUri;
-global using SunamoYouTube._sunamo.SunamoValues;
+global using SunamoYouTube;
 global using SunamoYouTube._sunamo.SunamoExceptions;
 global using System.Diagnostics;
 global using System.Text.RegularExpressions;

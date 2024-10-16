@@ -121,24 +121,24 @@ internal static class RegexHelper
         //        //HtmlTag Regex.
         //        new RegexCompilationInfo
         //        (
-        //            @AllStrings.lt
+        //            @"<"
         //            +    @"(?<endTag>/)?"    //Captures the / if this is an end tag.
         //            +    @"(?<tagname>\w+)"    //Captures TagName
-        //            +    @AllStrings.lb                //Groups tag contents
+        //            +    @"("                //Groups tag contents
         //            +        @"(\s+"            //Groups attributes
         //            +            @"(?<attName>\w+)"  //Attribute name
-        //            +            @AllStrings.lb                //groups =value portion.
+        //            +            @"("                //groups =value portion.
         //            +                @"\s*=\s*"            // =
         //            +                @"(?:"        //Groups attribute "value" portion.
         //            +                    @"""(?<attVal>[^""]*)"""    // attVal='double quoted'
         //            +                    @"|'(?<attVal>[^']*)'"        // attVal='single quoted'
         //            +                    @"|(?<attVal>[^'"">\s]+)"    // attVal=urlnospaces
-        //            +                @AllStrings.rb
+        //            +                @")"
         //            +            @")?"        //end optional att value portion.
         //            +        @")+\s*"        //One or more attribute pairs
         //            +        @"|\s*"            //Some white space.
-        //            +    @AllStrings.rb
-        //            + @"(?<completeTag>/)?>" //Captures the AllStrings.slash if this is a complete tag.
+        //            +    @")"
+        //            + @"(?<completeTag>/)?>" //Captures the "/" if this is a complete tag.
         //            , RegexOptions.IgnoreCase
         //            , "HtmlTagRegex"
         //            , "Haack.RegularExpressions"
