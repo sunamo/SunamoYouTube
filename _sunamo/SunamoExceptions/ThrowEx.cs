@@ -49,7 +49,7 @@ public partial class ThrowEx
 
     public static bool ThrowIsNotNull(string? exception, bool reallyThrow = true)
     {
-        if (exception == null)
+        if (exception != null)
         {
             Debugger.Break();
             if (reallyThrow)
