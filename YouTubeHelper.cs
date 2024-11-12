@@ -25,7 +25,7 @@ public static class YouTubeHelper
     }
 
     /// <summary>
-    ///     A1 = YouTube""cret
+    ///
     /// </summary>
     /// <param name="name"></param>
     /// <param name="ytCodes"></param>
