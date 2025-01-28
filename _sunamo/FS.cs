@@ -2,10 +2,6 @@ namespace SunamoYouTube._sunamo;
 
 internal class FS
 {
-    internal static void CreateUpfoldersPsysicallyUnlessThere(string nad)
-    {
-        CreateFoldersPsysicallyUnlessThere(Path.GetDirectoryName(nad));
-    }
     internal static void CreateFoldersPsysicallyUnlessThere(string nad)
     {
         ThrowEx.IsNullOrEmpty("nad", nad);
