@@ -28,19 +28,6 @@ internal static class RegexHelper
         return rUri.IsMatch(text) && (text.StartsWith("http://") || text.StartsWith("https://"));
     }
     internal static string lastTelephone = null;
-    internal static string SanitizePhone(string s)
-    {
-        if (string.IsNullOrWhiteSpace(s))
-        {
-            return s;
-        }
-        s = s.Replace(" ", "");
-        if (!s.StartsWith("+"))
-        {
-            s = "+420" + s;
-        }
-        return s;
-    }
     static RegexHelper()
     {
         // this one I unfortunately cant use because I use .net core 2.0, available from 2.1
