@@ -19,6 +19,7 @@
   <ItemGroup>
     <PackageReference Include="Google.Apis.YouTube.v3" Version="1.68.0.3608" />
     <None Include="readme.md" Pack="True" PackagePath="." />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="*" Pack="True" />
   </ItemGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DefineConstants>$(DefineConstants);ASYNC</DefineConstants>
