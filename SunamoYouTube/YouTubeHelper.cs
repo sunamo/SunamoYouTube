@@ -1,3 +1,6 @@
+// EN: Variable names have been checked and replaced with self-descriptive names
+// CZ: Názvy proměnných byly zkontrolovány a nahrazeny samopopisnými názvy
+
 namespace SunamoYouTube;
 
 /// <summary>
@@ -13,15 +16,15 @@ public static class YouTubeHelper
     ///     Direct edit
     /// </summary>
     /// <param name="l"></param>
-    public static List<string> GetYtCodesFromUri(List<string> l)
+    public static List<string> GetYtCodesFromUri(List<string> list)
     {
-        for (var i = 0; i < l.Count; i++)
+        for (var i = 0; i < list.Count; i++)
         {
-            var s = l[i];
-            if (RegexHelper.IsUri(s)) l[i] = QSHelper.GetParameter(s, "v");
+            var text = list[i];
+            if (RegexHelper.IsUri(text)) list[i] = QSHelper.GetParameter(text, "v");
         }
 
-        return l;
+        return list;
     }
 
     /// <summary>

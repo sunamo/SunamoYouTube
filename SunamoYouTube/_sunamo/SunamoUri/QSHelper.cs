@@ -1,3 +1,6 @@
+// EN: Variable names have been checked and replaced with self-descriptive names
+// CZ: Názvy proměnných byly zkontrolovány a nahrazeny samopopisnými názvy
+
 namespace SunamoYouTube._sunamo.SunamoUri;
 
 internal class QSHelper
@@ -7,10 +10,10 @@ internal class QSHelper
         var main = uri.Split(new string[] { "?", "&" }, StringSplitOptions.RemoveEmptyEntries);
         foreach (string var in main)
         {
-            var v = var.Split(new String[] { "=" }, StringSplitOptions.RemoveEmptyEntries);
-            if (v[0] == nameParam)
+            var value = var.Split(new String[] { "=" }, StringSplitOptions.RemoveEmptyEntries);
+            if (value[0] == nameParam)
             {
-                return v[1];
+                return value[1];
             }
         }
 
