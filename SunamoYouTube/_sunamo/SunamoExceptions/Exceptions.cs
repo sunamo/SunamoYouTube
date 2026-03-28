@@ -1,55 +1,78 @@
 namespace SunamoYouTube._sunamo.SunamoExceptions;
 
-// © www.sunamo.cz. All Rights Reserved.
+/// <summary>
+/// Exception helper class for formatting and creating exception messages.
+/// </summary>
 internal sealed partial class Exceptions
 {
     #region Other
-    internal static string CheckBefore(string before)
+    /// <summary>
+    /// Checks the prefix string and appends a colon separator if not empty.
+    /// </summary>
+    /// <param name="prefix">The prefix string to check.</param>
+    /// <returns>The prefix with colon separator, or empty string if prefix is null or whitespace.</returns>
+    internal static string CheckBefore(string prefix)
     {
-        return string.IsNullOrWhiteSpace(before) ? string.Empty : before + ": ";
+        return string.IsNullOrWhiteSpace(prefix) ? string.Empty : prefix + ": ";
     }
 
-    internal static Tuple<string, string, string> PlaceOfException(
-bool fillAlsoFirstTwo = true)
+    /// <summary>
+    /// Gets the place of exception from the current stack trace.
+    /// </summary>
+    /// <param name="isFillingFirstTwo">Whether to also fill the type and method name from the first non-ThrowEx frame.</param>
+    /// <returns>A tuple containing type name, method name, and formatted stack trace.</returns>
+    internal static Tuple<string, string, string> PlaceOfException(bool isFillingFirstTwo = true)
     {
-        StackTrace st = new();
-        var value = st.ToString();
-        var lines = value.Split(new string[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries).ToList();
+        StackTrace stackTrace = new();
+        var stackTraceText = stackTrace.ToString();
+        var lines = stackTraceText.Split(new string[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries).ToList();
         lines.RemoveAt(0);
-        var i = 0;
-        string type = string.Empty;
+        string typeName = string.Empty;
         string methodName = string.Empty;
-        for (; i < lines.Count; i++)
+        for (var i = 0; i < lines.Count; i++)
         {
-            var item = lines[i];
-            if (fillAlsoFirstTwo)
-                if (!item.StartsWith("   at ThrowEx"))
+            var line = lines[i];
+            if (isFillingFirstTwo)
+                if (!line.StartsWith("   at ThrowEx"))
                 {
-                    TypeAndMethodName(item, out type, out methodName);
-                    fillAlsoFirstTwo = false;
+                    TypeAndMethodName(line, out typeName, out methodName);
+                    isFillingFirstTwo = false;
                 }
-            if (item.StartsWith("at System."))
+            if (line.StartsWith("at System."))
             {
                 lines.Add(string.Empty);
                 lines.Add(string.Empty);
                 break;
             }
         }
-        return new Tuple<string, string, string>(type, methodName, string.Join(Environment.NewLine, lines));
+        return new Tuple<string, string, string>(typeName, methodName, string.Join(Environment.NewLine, lines));
     }
-    internal static void TypeAndMethodName(string lines, out string type, out string methodName)
+
+    /// <summary>
+    /// Extracts type name and method name from a stack trace line.
+    /// </summary>
+    /// <param name="line">The stack trace line to parse.</param>
+    /// <param name="typeName">The extracted type name.</param>
+    /// <param name="methodName">The extracted method name.</param>
+    internal static void TypeAndMethodName(string line, out string typeName, out string methodName)
     {
-        var s2 = lines.Split("at ")[1].Trim();
-        var text = s2.Split("(")[0];
-        var parameter = text.Split(new char[] { '.' }, StringSplitOptions.RemoveEmptyEntries).ToList();
-        methodName = parameter[^1];
-        parameter.RemoveAt(parameter.Count - 1);
-        type = string.Join(".", parameter);
+        var afterAt = line.Split("at ")[1].Trim();
+        var beforeParenthesis = afterAt.Split('(')[0];
+        var nameParts = beforeParenthesis.Split(new char[] { '.' }, StringSplitOptions.RemoveEmptyEntries).ToList();
+        methodName = nameParts[^1];
+        nameParts.RemoveAt(nameParts.Count - 1);
+        typeName = string.Join(".", nameParts);
     }
-    internal static string CallingMethod(int value = 1)
+
+    /// <summary>
+    /// Gets the name of the calling method from the stack trace.
+    /// </summary>
+    /// <param name="depth">The stack frame depth to retrieve.</param>
+    /// <returns>The name of the calling method.</returns>
+    internal static string CallingMethod(int depth = 1)
     {
         StackTrace stackTrace = new();
-        var methodBase = stackTrace.GetFrame(value)?.GetMethod();
+        var methodBase = stackTrace.GetFrame(depth)?.GetMethod();
         if (methodBase == null)
         {
             return "Method name cannot be get";
@@ -60,39 +83,53 @@ bool fillAlsoFirstTwo = true)
     #endregion
 
     #region IsNullOrWhitespace
-    internal static string? IsNullOrWhitespace(string before, string argName, string argValue, bool notAllowOnlyWhitespace)
+    /// <summary>
+    /// Checks if a string argument is null, empty, or whitespace and returns an error message.
+    /// </summary>
+    /// <param name="prefix">Prefix for the error message.</param>
+    /// <param name="argumentName">Name of the argument being checked.</param>
+    /// <param name="argumentValue">Value of the argument to check.</param>
+    /// <param name="isNotAllowingOnlyWhitespace">Whether to disallow strings containing only whitespace.</param>
+    /// <returns>Error message if validation fails, null otherwise.</returns>
+    internal static string? IsNullOrWhitespace(string prefix, string argumentName, string argumentValue, bool isNotAllowingOnlyWhitespace)
     {
-        string addParams;
-        if (argValue == null)
+        string additionalParamsText;
+        if (argumentValue == null)
         {
-            addParams = AddParams();
-            return CheckBefore(before) + argName + " is null" + addParams;
+            additionalParamsText = AddParams();
+            return CheckBefore(prefix) + argumentName + " is null" + additionalParamsText;
         }
-        if (argValue == string.Empty)
+        if (argumentValue == string.Empty)
         {
-            addParams = AddParams();
-            return CheckBefore(before) + argName + " is empty (without trim)" + addParams;
+            additionalParamsText = AddParams();
+            return CheckBefore(prefix) + argumentName + " is empty (without trim)" + additionalParamsText;
         }
-        if (notAllowOnlyWhitespace && argValue.Trim() == string.Empty)
+        if (isNotAllowingOnlyWhitespace && argumentValue.Trim() == string.Empty)
         {
-            addParams = AddParams();
-            return CheckBefore(before) + argName + " is empty (with trim)" + addParams;
+            additionalParamsText = AddParams();
+            return CheckBefore(prefix) + argumentName + " is empty (with trim)" + additionalParamsText;
         }
         return null;
     }
-    readonly static StringBuilder sbAdditionalInfoInner = new();
-    readonly static StringBuilder sbAdditionalInfo = new();
+
+    private readonly static StringBuilder additionalInfoInnerStringBuilder = new();
+    private readonly static StringBuilder additionalInfoStringBuilder = new();
+
+    /// <summary>
+    /// Formats and returns accumulated additional parameter information.
+    /// </summary>
+    /// <returns>Formatted string with outer and inner additional parameter details.</returns>
     internal static string AddParams()
     {
-        sbAdditionalInfo.Insert(0, Environment.NewLine);
-        sbAdditionalInfo.Insert(0, "Outer:");
-        sbAdditionalInfo.Insert(0, Environment.NewLine);
-        sbAdditionalInfoInner.Insert(0, Environment.NewLine);
-        sbAdditionalInfoInner.Insert(0, "Inner:");
-        sbAdditionalInfoInner.Insert(0, Environment.NewLine);
-        var addParams = sbAdditionalInfo.ToString();
-        var addParamsInner = sbAdditionalInfoInner.ToString();
-        return addParams + addParamsInner;
+        additionalInfoStringBuilder.Insert(0, Environment.NewLine);
+        additionalInfoStringBuilder.Insert(0, "Outer:");
+        additionalInfoStringBuilder.Insert(0, Environment.NewLine);
+        additionalInfoInnerStringBuilder.Insert(0, Environment.NewLine);
+        additionalInfoInnerStringBuilder.Insert(0, "Inner:");
+        additionalInfoInnerStringBuilder.Insert(0, Environment.NewLine);
+        var additionalParamsText = additionalInfoStringBuilder.ToString();
+        var additionalParamsInnerText = additionalInfoInnerStringBuilder.ToString();
+        return additionalParamsText + additionalParamsInnerText;
     }
     #endregion
 }

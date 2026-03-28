@@ -1,6 +1,6 @@
 # SunamoYouTube
 
-Working with YouTube
+A .NET library for working with the YouTube Data API v3 - creating playlists and managing video codes.
 
 ## Overview
 
@@ -10,12 +10,12 @@ SunamoYouTube is part of the Sunamo package ecosystem, providing modular, platfo
 
 ### Key Classes
 
-- **YouTubeHelper**
+- **YouTubeHelper** - Static helper for YouTube API operations (playlist creation, video code extraction from URIs).
 
 ### Key Methods
 
-- `GetYtCodesFromUri()`
-- `CreateNewPlaylist()`
+- `GetYtCodesFromUri()` - Extracts YouTube video codes from a list of URIs.
+- `CreateNewPlaylist()` - Creates a new public YouTube playlist and adds videos to it.
 
 ## Installation
 
@@ -25,16 +25,15 @@ dotnet add package SunamoYouTube
 
 ## Dependencies
 
-- **Google.Apis.YouTube.v3** (v1.69.0.3707)
-- **Microsoft.Extensions.Logging.Abstractions** (v9.0.3)
+- **Google.Apis.YouTube.v3** (v1.73.0.4029)
+- **Microsoft.Extensions.Logging.Abstractions** (v10.0.2)
 
 ## Package Information
 
 - **Package Name**: SunamoYouTube
-- **Version**: 25.3.29.1
-- **Target Framework**: net9.0
+- **Version**: 26.2.7.2
+- **Target Frameworks**: net10.0;net9.0;net8.0
 - **Category**: Platform-Independent NuGet Package
-- **Source Files**: 8
 
 ## Related Packages
 
@@ -42,4 +41,4 @@ This package is part of the Sunamo package ecosystem. For more information about
 
 ## License
 
-See the repository root for license information.
+MIT - See the repository root for license information.

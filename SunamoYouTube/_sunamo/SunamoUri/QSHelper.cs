@@ -1,16 +1,25 @@
 namespace SunamoYouTube._sunamo.SunamoUri;
 
+/// <summary>
+/// Helper class for parsing query string parameters from URIs.
+/// </summary>
 internal class QSHelper
 {
-    internal static string GetParameter(string uri, string nameParam)
+    /// <summary>
+    /// Gets a query string parameter value from a URI.
+    /// </summary>
+    /// <param name="uri">The URI to parse.</param>
+    /// <param name="parameterName">The name of the parameter to retrieve.</param>
+    /// <returns>The parameter value, or null if not found.</returns>
+    internal static string? GetParameter(string uri, string parameterName)
     {
-        var main = uri.Split(new string[] { "?", "&" }, StringSplitOptions.RemoveEmptyEntries);
-        foreach (string var in main)
+        var segments = uri.Split(new char[] { '?', '&' }, StringSplitOptions.RemoveEmptyEntries);
+        foreach (string segment in segments)
         {
-            var value = var.Split(new String[] { "=" }, StringSplitOptions.RemoveEmptyEntries);
-            if (value[0] == nameParam)
+            var keyValueParts = segment.Split('=', StringSplitOptions.RemoveEmptyEntries);
+            if (keyValueParts[0] == parameterName)
             {
-                return value[1];
+                return keyValueParts[1];
             }
         }
 

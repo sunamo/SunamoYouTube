@@ -1,25 +1,44 @@
 namespace SunamoYouTube._sunamo.SunamoExceptions;
 
+/// <summary>
+/// Helper class for throwing validated exceptions with detailed context.
+/// </summary>
 internal partial class ThrowEx
 {
-
-    internal static bool IsNullOrEmpty(string argName, string argValue)
-    { return ThrowIsNotNull(Exceptions.IsNullOrWhitespace(FullNameOfExecutedCode(), argName, argValue, true)); }
+    /// <summary>
+    /// Validates that a string argument is not null or empty.
+    /// </summary>
+    /// <param name="argumentName">Name of the argument to validate.</param>
+    /// <param name="argumentValue">Value of the argument to validate.</param>
+    /// <returns>True if the validation failed and an exception was thrown.</returns>
+    internal static bool IsNullOrEmpty(string argumentName, string argumentValue)
+    { return ThrowIsNotNull(Exceptions.IsNullOrWhitespace(FullNameOfExecutedCode(), argumentName, argumentValue, true)); }
 
     #region Other
+    /// <summary>
+    /// Gets the fully qualified name of the currently executed code location.
+    /// </summary>
+    /// <returns>The fully qualified type and method name.</returns>
     internal static string FullNameOfExecutedCode()
     {
-        Tuple<string, string, string> placeOfExc = Exceptions.PlaceOfException();
-        string f = FullNameOfExecutedCode(placeOfExc.Item1, placeOfExc.Item2, true);
-        return f;
+        Tuple<string, string, string> placeOfException = Exceptions.PlaceOfException();
+        string fullName = FullNameOfExecutedCode(placeOfException.Item1, placeOfException.Item2, true);
+        return fullName;
     }
 
-    static string FullNameOfExecutedCode(object type, string methodName, bool fromThrowEx = false)
+    /// <summary>
+    /// Gets the fully qualified name from type and method name.
+    /// </summary>
+    /// <param name="type">The type object, Type, MethodBase, or string representation.</param>
+    /// <param name="methodName">The method name.</param>
+    /// <param name="isFromThrowEx">Whether the call originates from ThrowEx class.</param>
+    /// <returns>The fully qualified type.method name.</returns>
+    private static string FullNameOfExecutedCode(object type, string methodName, bool isFromThrowEx = false)
     {
         if (methodName == null)
         {
             int depth = 2;
-            if (fromThrowEx)
+            if (isFromThrowEx)
             {
                 depth++;
             }
@@ -27,14 +46,14 @@ internal partial class ThrowEx
             methodName = Exceptions.CallingMethod(depth);
         }
         string typeFullName;
-        if (type is Type type2)
+        if (type is Type resolvedType)
         {
-            typeFullName = type2.FullName ?? "Type cannot be get via type is Type type2";
+            typeFullName = resolvedType.FullName ?? "Type cannot be get via type is Type resolvedType";
         }
-        else if (type is MethodBase method)
+        else if (type is MethodBase methodBase)
         {
-            typeFullName = method.ReflectedType?.FullName ?? "Type cannot be get via type is MethodBase method";
-            methodName = method.Name;
+            typeFullName = methodBase.ReflectedType?.FullName ?? "Type cannot be get via type is MethodBase methodBase";
+            methodName = methodBase.Name;
         }
         else if (type is string)
         {
@@ -42,20 +61,26 @@ internal partial class ThrowEx
         }
         else
         {
-            Type t = type.GetType();
-            typeFullName = t.FullName ?? "Type cannot be get via type.GetType()";
+            Type objectType = type.GetType();
+            typeFullName = objectType.FullName ?? "Type cannot be get via type.GetType()";
         }
         return string.Concat(typeFullName, ".", methodName);
     }
 
-    internal static bool ThrowIsNotNull(string? exception, bool reallyThrow = true)
+    /// <summary>
+    /// Throws an exception if the provided exception message is not null.
+    /// </summary>
+    /// <param name="exceptionMessage">The exception message to check. If not null, an exception is thrown.</param>
+    /// <param name="isReallyThrowing">Whether to actually throw the exception or just return the result.</param>
+    /// <returns>True if the exception message was not null.</returns>
+    internal static bool ThrowIsNotNull(string? exceptionMessage, bool isReallyThrowing = true)
     {
-        if (exception != null)
+        if (exceptionMessage != null)
         {
             Debugger.Break();
-            if (reallyThrow)
+            if (isReallyThrowing)
             {
-                throw new Exception(exception);
+                throw new Exception(exceptionMessage);
             }
             return true;
         }
