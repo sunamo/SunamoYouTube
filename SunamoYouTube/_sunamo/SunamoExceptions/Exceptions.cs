@@ -1,26 +1,11 @@
 namespace SunamoYouTube._sunamo.SunamoExceptions;
 
-/// <summary>
-/// Exception helper class for formatting and creating exception messages.
-/// </summary>
 internal sealed partial class Exceptions
 {
     #region Other
-    /// <summary>
-    /// Checks the prefix string and appends a colon separator if not empty.
-    /// </summary>
-    /// <param name="prefix">The prefix string to check.</param>
-    /// <returns>The prefix with colon separator, or empty string if prefix is null or whitespace.</returns>
     internal static string CheckBefore(string prefix)
-    {
-        return string.IsNullOrWhiteSpace(prefix) ? string.Empty : prefix + ": ";
-    }
+        => string.IsNullOrWhiteSpace(prefix) ? string.Empty : prefix + ": ";
 
-    /// <summary>
-    /// Gets the place of exception from the current stack trace.
-    /// </summary>
-    /// <param name="isFillingFirstTwo">Whether to also fill the type and method name from the first non-ThrowEx frame.</param>
-    /// <returns>A tuple containing type name, method name, and formatted stack trace.</returns>
     internal static Tuple<string, string, string> PlaceOfException(bool isFillingFirstTwo = true)
     {
         StackTrace stackTrace = new();
@@ -48,12 +33,6 @@ internal sealed partial class Exceptions
         return new Tuple<string, string, string>(typeName, methodName, string.Join(Environment.NewLine, lines));
     }
 
-    /// <summary>
-    /// Extracts type name and method name from a stack trace line.
-    /// </summary>
-    /// <param name="line">The stack trace line to parse.</param>
-    /// <param name="typeName">The extracted type name.</param>
-    /// <param name="methodName">The extracted method name.</param>
     internal static void TypeAndMethodName(string line, out string typeName, out string methodName)
     {
         var afterAt = line.Split("at ")[1].Trim();
@@ -64,16 +43,11 @@ internal sealed partial class Exceptions
         typeName = string.Join(".", nameParts);
     }
 
-    /// <summary>
-    /// Gets the name of the calling method from the stack trace.
-    /// </summary>
-    /// <param name="depth">The stack frame depth to retrieve.</param>
-    /// <returns>The name of the calling method.</returns>
     internal static string CallingMethod(int depth = 1)
     {
         StackTrace stackTrace = new();
         var methodBase = stackTrace.GetFrame(depth)?.GetMethod();
-        if (methodBase == null)
+        if (methodBase is null)
         {
             return "Method name cannot be get";
         }
@@ -83,14 +57,6 @@ internal sealed partial class Exceptions
     #endregion
 
     #region IsNullOrWhitespace
-    /// <summary>
-    /// Checks if a string argument is null, empty, or whitespace and returns an error message.
-    /// </summary>
-    /// <param name="prefix">Prefix for the error message.</param>
-    /// <param name="argumentName">Name of the argument being checked.</param>
-    /// <param name="argumentValue">Value of the argument to check.</param>
-    /// <param name="isNotAllowingOnlyWhitespace">Whether to disallow strings containing only whitespace.</param>
-    /// <returns>Error message if validation fails, null otherwise.</returns>
     internal static string? IsNullOrWhitespace(string prefix, string argumentName, string argumentValue, bool isNotAllowingOnlyWhitespace)
     {
         string additionalParamsText;
@@ -115,10 +81,6 @@ internal sealed partial class Exceptions
     private readonly static StringBuilder additionalInfoInnerStringBuilder = new();
     private readonly static StringBuilder additionalInfoStringBuilder = new();
 
-    /// <summary>
-    /// Formats and returns accumulated additional parameter information.
-    /// </summary>
-    /// <returns>Formatted string with outer and inner additional parameter details.</returns>
     internal static string AddParams()
     {
         additionalInfoStringBuilder.Insert(0, Environment.NewLine);
