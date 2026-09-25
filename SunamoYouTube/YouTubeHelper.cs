@@ -1,9 +1,19 @@
 namespace SunamoYouTube;
 
+/// <summary>
+/// YouTube Data API v3 helper: create playlists and manage video codes.
+/// Relies on the Google APIs Client Library for .NET, v1.7.0 or higher.
+/// See https://developers.google.com/api-client-library/dotnet/get_started
+/// </summary>
 public static class YouTubeHelper
 {
     private static readonly Type helperType = typeof(YouTubeHelper);
 
+    /// <summary>
+    /// Extracts YouTube video codes from a list of URIs. Modifies the list directly.
+    /// </summary>
+    /// <param name="list">List of URIs or video codes to process.</param>
+    /// <returns>The same list with URIs replaced by their video codes.</returns>
     public static List<string> GetYtCodesFromUri(List<string> list)
     {
         for (var i = 0; i < list.Count; i++)
@@ -19,6 +29,13 @@ public static class YouTubeHelper
         return list;
     }
 
+    /// <summary>
+    /// Creates a new public YouTube playlist and adds videos to it.
+    /// Note: This will create a new playlist even if one with the same name already exists.
+    /// </summary>
+    /// <param name="filePath">Path to the YouTube API client secrets JSON file.</param>
+    /// <param name="playlistName">Name of the new playlist to create.</param>
+    /// <param name="list">List of YouTube video codes to add to the playlist.</param>
     public static async Task CreateNewPlaylist(string filePath, string playlistName, List<string> list)
     {
         list = list.Where(text => !string.IsNullOrEmpty(text)).ToList();
