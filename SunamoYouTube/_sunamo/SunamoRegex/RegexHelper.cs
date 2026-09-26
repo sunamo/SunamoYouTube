@@ -81,9 +81,7 @@ internal static class RegexHelper
     /// <param name="text">The text to check.</param>
     /// <returns>True if the text is a valid URI.</returns>
     internal static bool IsUri(string text)
-    {
-        return RUri.IsMatch(text) && (text.StartsWith("http://") || text.StartsWith("https://"));
-    }
+        => RUri.IsMatch(text) && (text.StartsWith("http://") || text.StartsWith("https://"));
 
     /// <summary>
     /// Stores the last detected telephone number.

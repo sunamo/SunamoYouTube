@@ -12,9 +12,7 @@ internal sealed partial class Exceptions
     /// <param name="prefix">The prefix string to check.</param>
     /// <returns>The prefix with colon separator, or empty string if prefix is null or whitespace.</returns>
     internal static string CheckBefore(string prefix)
-    {
-        return string.IsNullOrWhiteSpace(prefix) ? string.Empty : prefix + ": ";
-    }
+        => string.IsNullOrWhiteSpace(prefix) ? string.Empty : prefix + ": ";
 
     /// <summary>
     /// Gets the place of exception from the current stack trace.
@@ -73,7 +71,7 @@ internal sealed partial class Exceptions
     {
         StackTrace stackTrace = new();
         var methodBase = stackTrace.GetFrame(depth)?.GetMethod();
-        if (methodBase == null)
+        if (methodBase is null)
         {
             return "Method name cannot be get";
         }

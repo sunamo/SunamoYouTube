@@ -58,23 +58,35 @@ public static class YouTubeHelper
             ApplicationName = helperType.ToString()
         });
 
-        var newPlaylist = new Playlist();
-        newPlaylist.Snippet = new PlaylistSnippet();
-        newPlaylist.Snippet.Title = playlistName;
-        newPlaylist.Snippet.Description = "A playlist created with the YouTube API v3";
-        newPlaylist.Status = new PlaylistStatus();
-        newPlaylist.Status.PrivacyStatus = "public";
+        var newPlaylist = new Playlist
+        {
+            Snippet = new PlaylistSnippet
+            {
+                Title = playlistName,
+                Description = "A playlist created with the YouTube API v3"
+            },
+            Status = new PlaylistStatus
+            {
+                PrivacyStatus = "public"
+            }
+        };
         newPlaylist = await youtubeService.Playlists.Insert(newPlaylist, "snippet,status").ExecuteAsync();
 
         foreach (var item in list)
         {
-            var newPlaylistItem = new PlaylistItem();
-            newPlaylistItem.Snippet = new PlaylistItemSnippet();
-            newPlaylistItem.Snippet.PlaylistId = newPlaylist.Id;
-            newPlaylistItem.Snippet.ResourceId = new ResourceId();
-            newPlaylistItem.Snippet.ResourceId.Kind = "youtube#video";
-            newPlaylistItem.Snippet.ResourceId.VideoId = item;
-            newPlaylistItem = await youtubeService.PlaylistItems.Insert(newPlaylistItem, "snippet").ExecuteAsync();
+            var newPlaylistItem = new PlaylistItem
+            {
+                Snippet = new PlaylistItemSnippet
+                {
+                    PlaylistId = newPlaylist.Id,
+                    ResourceId = new ResourceId
+                    {
+                        Kind = "youtube#video",
+                        VideoId = item
+                    }
+                }
+            };
+            await youtubeService.PlaylistItems.Insert(newPlaylistItem, "snippet").ExecuteAsync();
         }
     }
 }
