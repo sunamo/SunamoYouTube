@@ -1,5 +1,10 @@
 # SunamoYouTube
 
+## Short description
+
+Knihovna pro YouTube Data API v3: vytváření playlistů a správa kódů videí. Součást sbírky pinp s testy a Runnerem.
+
+
 A .NET library for working with the YouTube Data API v3 - creating playlists and managing video codes.
 
 ## Overview
