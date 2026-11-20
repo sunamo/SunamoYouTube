@@ -1,9 +1,17 @@
 namespace SunamoYouTube;
 
+/// <summary>
+/// Represents the you tube helper type.
+/// </summary>
 public static class YouTubeHelper
 {
     private static readonly Type helperType = typeof(YouTubeHelper);
 
+    /// <summary>
+    /// Get yt codes from uri.
+    /// </summary>
+    /// <param name="list">The list.</param>
+    /// <returns>The get yt codes from uri result.</returns>
     public static List<string> GetYtCodesFromUri(List<string> list)
     {
         for (var i = 0; i < list.Count; i++)
@@ -19,6 +27,12 @@ public static class YouTubeHelper
         return list;
     }
 
+    /// <summary>
+    /// Create new playlist.
+    /// </summary>
+    /// <param name="filePath">The file path.</param>
+    /// <param name="playlistName">The playlist name.</param>
+    /// <param name="list">The list.</param>
     public static async Task CreateNewPlaylist(string filePath, string playlistName, List<string> list)
     {
         list = list.Where(text => !string.IsNullOrEmpty(text)).ToList();
